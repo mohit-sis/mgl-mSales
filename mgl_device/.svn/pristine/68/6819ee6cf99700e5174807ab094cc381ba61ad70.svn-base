@@ -1,0 +1,860 @@
+/**
+ ******************************************************************************
+ * C O P Y R I G H T  A N D  C O N F I D E N T I A L I T Y  N O T I C E
+ * <p>
+ * Copyright © 2011-2012 Mobicule Technologies Pvt. Ltd. All rights reserved. 
+ * This is proprietary information of Mobicule Technologies Pvt. Ltd.and is 
+ * subject to applicable licensing agreements. Unauthorized reproduction, 
+ * transmission or distribution of this file and its contents is a 
+ * violation of applicable laws.
+ ******************************************************************************
+ *
+ * @project MahanagarGasLimitedNew
+ */
+package com.mobicule.android.msales.mgl.updatecustomer.view;
+
+import java.util.Vector;
+
+import org.json.me.JSONArray;
+import org.json.me.JSONException;
+import org.json.me.JSONObject;
+
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.mahanagar.R;
+import com.mobicule.android.component.logging.MobiculeLogger;
+import com.mobicule.android.msales.mgl.menu.view.MainMenu;
+import com.mobicule.android.msales.mgl.meterreading.view.BuildingListActivity;
+import com.mobicule.android.msales.mgl.meterreading.view.CustomerSummary;
+import com.mobicule.android.msales.mgl.meterreading.view.MeterReading;
+import com.mobicule.android.msales.mgl.util.Constants;
+import com.mobicule.msales.mgl.client.common.Response;
+import com.mobicule.msales.mgl.client.meterreading.IMeterReading;
+import com.mobicule.msales.mgl.client.meterreading.IMeterReading.IInspection;
+import com.mobicule.msales.mgl.client.meterreading.IMeterReading.IMeterReadingInstance;
+import com.mobicule.msales.mgl.client.meterreading.IMeterReading.IReadings;
+import com.mobicule.msales.mgl.client.meterreading.IMeterReadingFacade;
+
+/**
+ * 
+ * <enter description here>
+ * 
+ * @author nikita
+ * @see
+ * 
+ * @createdOn 20-Feb-2012
+ * @modifiedOn
+ * 
+ * @copyright © 2010-2011 Mobicule Technologies Pvt. Ltd. All rights reserved.
+ */
+public class UpdateCustomerInfoActivity extends DefaultUpdateCustomerActivity implements OnClickListener
+{
+	private TextView bpNo, mroNo, customerName,currentContactNoMobile,currentAddressTV1,currentAddressTV2,CANumberText,CANumberValue; 
+	/*currentMeterNo, flatNo, floorNo, plotNo, wingNo, buildName,
+			currentContactNoMobile, currentContactNoHome, currentContactNoOffice*/
+
+	/*private EditText newCustomerNameValue, newMeterNoValue, newFlatValue, newFloorValue, newPlotValue, newWingValue,
+			newBuildingNameValue, newContactNoMobileValue, newContactNoHomeValue, newContactNoOfficeValue,
+			editTextRemark;
+	*/
+	private String getUpdateCustomerJson, selectedCustomerJson;
+
+	//	private Spinner documentList;
+
+	private Menu menu;
+
+	private JSONObject jsonoCustomerDetails;
+
+	protected String meterReadingType = "Take Meter Reading";
+
+	private Button b_contactUpdate, b_meterUpdate, b_addressUpdate;
+
+	private Button takeMeterReading;//cancel_button, next_button,
+
+	@Override
+	protected void onStart()
+	{
+		super.onStart();
+		Constants.broadcastDialogContext = this;
+	}
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.new_customer_update);
+
+		/*updateCustomerFacade.getCustomerUpdate().reset();
+
+		initalization();
+
+		if (getIntent().hasExtra("selectedCustomerJSON"))
+		{
+			Bundle extras = getIntent().getExtras();
+			selectedCustomerJson = extras.getString("selectedCustomerJSON");
+		}
+
+		if (getIntent().hasExtra("updateCustomer"))
+		{
+			Bundle extras = getIntent().getExtras();
+			getUpdateCustomerJson = extras.getString("updateCustomer");
+
+			setCustomerDataInBo();*/
+
+		/*documentList.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
+		{
+			@Override
+			public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3)
+			{
+
+				if (documentList.getItemAtPosition(arg2).toString().equalsIgnoreCase("Select Document Type"))
+				{
+
+				}
+				else
+				{
+
+					if (!oneOfTheFieldsFilled())
+					{
+						AlertDialog.Builder builder = new AlertDialog.Builder(UpdateCustomerInfoActivity.this);
+						builder.setCancelable(true);
+
+						builder.setMessage("Please enter atleast one of the field other than remark."
+								+ "\r\n"
+								+ this.getString(R.string.all_details_have_been_verified_and_updated_wherever_applicable));
+						builder.setInverseBackgroundForced(true);
+						builder.setPositiveButton("Ok", new DialogInterface.OnClickListener()
+						{
+							@Override
+							public void onClick(DialogInterface dialog, int which)
+							{
+
+								dialog.dismiss();
+
+							}
+						});
+
+						AlertDialog alert = builder.create();
+						alert.show();
+
+						showAlert();
+						documentList.setSelection(0);
+
+					}
+					else
+					{
+						if (!newContactNoMobileValue.getText().toString().equals(""))
+						{
+							if (newContactNoMobileValue.getText().toString().length() < 10)
+							{
+
+								Toast.makeText(UpdateCustomerInfoActivity.this, "Enter valid Mobile Number", Toast.LENGTH_SHORT).show();
+								
+							}
+							
+						}
+
+						else if (!newContactNoHomeValue.getText().toString().equals(""))
+						{
+							if (newContactNoHomeValue.getText().toString().length() < 8)
+							{
+
+								Toast.makeText(UpdateCustomerInfoActivity.this, "Enter valid Contact Number (Home)", Toast.LENGTH_SHORT).show();
+								
+							}
+							
+						}
+
+						else if (!newContactNoOfficeValue.getText().toString().equals(""))
+						{
+							if (newContactNoOfficeValue.getText().toString().length() < 8)
+							{
+
+								Toast.makeText(UpdateCustomerInfoActivity.this, "Enter valid Contact Number (Office)", Toast.LENGTH_SHORT).show();
+								
+							}
+							
+						}
+						else{
+
+							if (arg2 != 0)
+							{
+								updateDataInBo();
+
+								updateCustomerBO.setDocType(documentList.getItemAtPosition(arg2).toString());
+
+								Intent intent = new Intent(UpdateCustomerInfoActivity.this,
+										DocumentImageActivity.class);
+								intent.putExtra("updateCustomer", getUpdateCustomerJson);
+								intent.putExtra("selectedCustomerJSON", selectedCustomerJson);
+								startActivity(intent);
+								finish();
+							}
+						}
+						
+						if(validContactNumbers()){
+							
+							if (arg2 != 0)
+							{
+								updateDataInBo();
+
+								updateCustomerBO.setDocType(documentList.getItemAtPosition(arg2).toString());
+
+								Intent intent = new Intent(UpdateCustomerInfoActivity.this,
+										DocumentImageActivity.class);
+								intent.putExtra("updateCustomer", getUpdateCustomerJson);
+								intent.putExtra("selectedCustomerJSON", selectedCustomerJson);
+								startActivity(intent);
+								finish();
+							}
+							
+						}
+
+					}
+				}
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> arg0)
+			{
+
+			}
+		});*/
+		//}
+	}
+
+	@Override
+	protected void onResume()
+	{
+		super.onResume();
+
+		//updateCustomerFacade.getCustomerUpdate().reset();
+
+		initalization();
+
+		if (getIntent().hasExtra("selectedCustomerJSON"))
+		{
+			Bundle extras = getIntent().getExtras();
+			selectedCustomerJson = extras.getString("selectedCustomerJSON");
+			MobiculeLogger.verbose("selectedCustomerJSON: " + selectedCustomerJson);
+		}
+
+		if (getIntent().hasExtra("updateCustomer"))
+		{
+			MobiculeLogger.verbose("updateCustomer");
+			Bundle extras = getIntent().getExtras();
+			getUpdateCustomerJson = extras.getString("updateCustomer");
+
+			setCustomerDataInBo();
+		}
+
+		String extraStr_updateCustomerSummary = "updateCompletedCustomerBySearch";
+
+		Bundle bundle = getIntent().getExtras();
+		if (getIntent().hasExtra(extraStr_updateCustomerSummary))
+		{
+			selectedCustomerJson = bundle.getString(extraStr_updateCustomerSummary);
+		}
+
+		MobiculeLogger.verbose("In UpdateCustomerInfoActivity : onResume() : meterReadingBO() : "
+				+ meterReadingBO.toJSON().toString());
+         	}
+
+	/*private boolean validContactNumbers()
+	{
+		
+		boolean isValidContactNumberMobile = true ,isValidContactNoHome = true, isValidContactNumberOffice = true;
+		if (!newContactNoMobileValue.getText().toString().equals(""))
+		{
+			if (newContactNoMobileValue.getText().toString().length() < 10)
+			{
+
+				Toast.makeText(this, "Enter valid Mobile Number", Toast.LENGTH_SHORT).show();
+				documentList.setSelection(0);
+				isValidContactNumberMobile = false;
+			}
+			else
+			{
+				isValidContactNumberMobile = true;
+			}
+		}
+
+		if (!newContactNoHomeValue.getText().toString().equals(""))
+		{
+			if (newContactNoHomeValue.getText().toString().length() < 8)
+			{
+
+				Toast.makeText(this, "Enter valid Contact Number (Home)", Toast.LENGTH_SHORT).show();
+				documentList.setSelection(0);
+				isValidContactNoHome = false;
+			}
+			else
+			{
+				isValidContactNoHome = true;
+			}
+		}
+
+		if (!newContactNoOfficeValue.getText().toString().equals(""))
+		{
+			if (newContactNoOfficeValue.getText().toString().length() < 8)
+			{
+
+				Toast.makeText(this, "Enter valid Contact Number (Office)", Toast.LENGTH_SHORT).show();
+				documentList.setSelection(0);
+				isValidContactNumberOffice = false;
+			}
+			else
+			{
+				isValidContactNumberOffice = true;
+			}
+		}
+		
+		if(!isValidContactNumberMobile || !isValidContactNoHome || !isValidContactNumberOffice){
+			return false;
+		}
+		
+		return true;
+	}
+	*/
+	private void showAlert()
+	{
+		AlertDialog.Builder builder = new AlertDialog.Builder(UpdateCustomerInfoActivity.this);
+		builder.setCancelable(true);
+
+		builder.setMessage("Please enter atleast one of the field other than remark." + "\r\n"
+				+ this.getString(R.string.please_enter_atleast_one_field));
+		builder.setInverseBackgroundForced(true);
+		builder.setPositiveButton("Ok", new DialogInterface.OnClickListener()
+		{
+			@Override
+			public void onClick(DialogInterface dialog, int which)
+			{
+
+				dialog.dismiss();
+
+			}
+		});
+
+		AlertDialog alert = builder.create();
+		alert.show();
+
+	}
+
+	/*public boolean oneOfTheFieldsFilled()
+	{
+
+		if (newCustomerNameValue.getText().toString().equals("") && newMeterNoValue.getText().toString().equals("")
+				&& newFlatValue.getText().toString().equals("") && newFloorValue.getText().toString().equals("")
+				&& newPlotValue.getText().toString().equals("") && newWingValue.getText().toString().equals("")
+				&& newBuildingNameValue.getText().toString().equals("")
+				&& newContactNoMobileValue.getText().toString().equals("")
+				&& newContactNoHomeValue.getText().toString().equals("")
+				&& newContactNoOfficeValue.getText().toString().equals(""))
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+
+	}*/
+
+	private void setCustomerDataInBo()
+	{
+		try
+		{
+			JSONObject updateCustomer = new JSONObject(getUpdateCustomerJson);
+
+			String custName = updateCustomer.getValue(Constants.FIELD_CUSTOMER_NAME).toString();
+			customerName.setText(custName);
+			updateCustomerBO.setCustomerName(custName);
+
+			String bpNumber = updateCustomer.getValue(Constants.FIELD_BP_NO).toString();
+			bpNo.setText(bpNumber);
+			updateCustomerBO.setBPNumber(bpNumber);
+
+			String CANumber = updateCustomer.getValue(Constants.KEY_CUSTOMER_CA_NUMBER).toString();
+			CANumberValue.setText(CANumber);
+			
+			String mroNumber = updateCustomer.getValue(Constants.KEY_MRO_NUMBER).toString();
+			mroNo.setText(mroNumber);
+			updateCustomerBO.setMroNo(mroNumber);
+
+			String currentContactNumberMobile = updateCustomer.getValue(Constants.KEY_CUSTOMER_CONTACT_NUMBER)
+					.toString();
+			currentContactNoMobile.setText(currentContactNumberMobile);
+			updateCustomerBO.setCurrContactNoMobile(currentContactNumberMobile);
+
+			String address = updateCustomer.getValue("address").toString();
+			currentAddressTV2.setText(address);
+
+			/*String flatNumber = updateCustomer.getValue(Constants.FIELD_FLAT_NO).toString();
+			flatNo.setText(flatNumber);
+			updateCustomerBO.setFlatNumber(flatNumber);
+
+			String floorNumber = updateCustomer.getValue(getString(R.string.key_field_floor)).toString();
+			floorNo.setText(floorNumber);
+			updateCustomerBO.setFloor(floorNumber);
+
+			String plot = updateCustomer.getValue(getString(R.string.key_field_plot)).toString();
+			plotNo.setText(plot);
+			updateCustomerBO.setPlot(plot);
+
+			String buildNameStr = updateCustomer.getValue(getString(R.string.key_field_buildingname)).toString();
+			buildName.setText(buildNameStr);
+			updateCustomerBO.setBuildName(buildNameStr);
+
+			String wing = updateCustomer.getValue(getString(R.string.key_field_wing)).toString();
+			wingNo.setText(wing);
+			updateCustomerBO.setWing(wing);
+
+			String mroNumber = updateCustomer.getValue(Constants.KEY_MRO_NUMBER).toString();
+			mroNo.setText(mroNumber);
+			updateCustomerBO.setMroNo(mroNumber);
+
+			String currentContactNumberMobile = updateCustomer.getValue(Constants.KEY_CUSTOMER_CONTACT_NUMBER)
+					.toString();
+			currentContactNoMobile.setText(currentContactNumberMobile);
+			updateCustomerBO.setCurrContactNoMobile(currentContactNumberMobile);
+
+			String currentContactNumberHome = updateCustomer.getValue(Constants.KEY_CUSTOMER_LANDLINE_NUMBER)
+					.toString();
+			currentContactNoHome.setText(currentContactNumberHome);
+			updateCustomerBO.setCurrContactNoHome(currentContactNumberHome);
+
+			String currentContactNumberOffice = updateCustomer.getValue(Constants.KEY_CUSTOMER_OFFICE_NUMBER)
+					.toString();
+			currentContactNoOffice.setText(currentContactNumberOffice);
+			updateCustomerBO.setCurrContactNoOffice(currentContactNumberOffice);
+
+			String currentMeterNumber = updateCustomer.getValue(Constants.FIELD_METER_NO).toString();
+			currentMeterNo.setText(currentMeterNumber);
+			updateCustomerBO.setCurrentMeterNO(currentMeterNumber);
+			*/
+			/*
+			 * updateCustomerBO.setNewFlatNumber(Constants.EMPTY_STRING);
+			 * updateCustomerBO.setNewFloor(Constants.EMPTY_STRING);
+			 * updateCustomerBO.setNewBuildName(Constants.EMPTY_STRING);
+			 * updateCustomerBO.setNewCustomerName(Constants.EMPTY_STRING);
+			 * updateCustomerBO.setNewWing(Constants.EMPTY_STRING);
+			 * updateCustomerBO.setNewPlot(Constants.EMPTY_STRING);
+			 * updateCustomerBO.setNewContactNoMobile(Constants.EMPTY_STRING);
+			 * updateCustomerBO.setNewContactNoHome(Constants.EMPTY_STRING);
+			 * updateCustomerBO.setNewContactNoOffice(Constants.EMPTY_STRING);
+			 * updateCustomerBO.setNewMeterNO(Constants.EMPTY_STRING);
+			 * updateCustomerBO.setRemark(Constants.EMPTY_STRING);
+			 */
+
+		}
+		catch (Exception e)
+		{
+
+			handler.logCrashReport(e);
+			e.printStackTrace();
+		}
+	}
+
+	/*@Override
+	public boolean onCreateOptionsMenu(Menu menu)
+	{
+		// menu.add("Take Images");
+		this.menu = menu;
+		menu.add("Cancel");
+		return super.onCreateOptionsMenu(menu);
+	}*/
+
+	/*@Override
+	public boolean onKeyDown(int keycode, KeyEvent event)
+	{
+
+		if (keycode == KeyEvent.KEYCODE_MENU)
+		{
+			String meterNo = newMeterNoValue.getText().toString();
+			String contactHome = newContactNoHomeValue.getText().toString();
+			String contactMobile = newContactNoMobileValue.getText().toString();
+			String contactOffice = currentContactNoOffice.getText().toString();
+			String custName = newCustomerNameValue.getText().toString();
+			String flatValue = newFlatValue.getText().toString();
+			String floorValue = newFloorValue.getText().toString();
+			String plotValue = newPlotValue.getText().toString();
+			String wingValue = newWingValue.getText().toString();
+			String buildName = newBuildingNameValue.getText().toString();
+			String remarkValue = editTextRemark.getText().toString();
+
+			s
+			 * if (custName.equals("") && flatValue.equals("") &&
+			 * floorValue.equals("") && plotValue.equals("") &&
+			 * wingValue.equals("") && buildName.equals("") &&
+			 * remarkValue.equals("") && meterNo.equals("") &&
+			 * contactHome.equals("") && contactMobile.equals("") &&
+			 * contactOffice.equals("")) { if (menu != null) { menu.clear();
+			 * menu.add("Cancel"); } } else
+			 if ((!meterNo.equals("") || (!contactHome.equals("") || (!contactMobile.equals("")) || (!contactOffice
+					.equals(""))))
+					&& (custName.equals("") && (flatValue.equals("") && (floorValue.equals("") && (plotValue.equals("") && (wingValue
+							.equals("") && (buildName.equals("") && (remarkValue.equals("")))))))))
+			{
+
+				if (menu != null)
+				{
+				menu.clear();
+				menu.add("Next");
+				menu.add("Cancel");
+				}
+			}
+			else
+			{
+				if (menu != null)
+				{
+					menu.clear();
+					menu.add("Cancel");
+				}
+			}
+
+			
+			 * else if (!custName.equals("") || (!flatValue.equals("") ||
+			 * (!floorValue.equals("") || (!plotValue .equals("") ||
+			 * (!wingValue.equals("") || (!buildName .equals("") ||
+			 * (!remarkValue.equals("")))))))) {
+			 * 
+			 * 
+			 * 
+			 * if (menu != null) {
+			 * 
+			 * } }
+			 
+
+		}
+
+		return super.onKeyDown(keycode, event);
+
+	}
+	*/
+
+	private void initalization()
+	{
+		bpNo = (TextView) findViewById(R.id.bpNumber);
+
+		mroNo = (TextView) findViewById(R.id.mroNumber);
+
+		customerName = (TextView) findViewById(R.id.customerName);
+
+		currentContactNoMobile = (TextView) findViewById(R.id.contactMobileNo);
+
+		CANumberValue = (TextView) findViewById(R.id.CANumber);
+		
+		b_contactUpdate = (Button) findViewById(R.id.b_contactUpdate);
+		b_contactUpdate.setOnClickListener(this);
+
+		b_meterUpdate = (Button) findViewById(R.id.b_meterUpadte);
+		b_meterUpdate.setOnClickListener(this);
+
+		b_addressUpdate = (Button) findViewById(R.id.b_addressUpadte);
+		b_addressUpdate.setOnClickListener(this);
+
+		takeMeterReading = (Button) findViewById(R.id.b_takemeterreading);
+		takeMeterReading.setOnClickListener(this);
+		
+		if(BuildingListActivity.STATUS.equalsIgnoreCase(Constants.FIELD_COMPLETED))
+		{
+			takeMeterReading.setVisibility(View.GONE);
+		}
+		else
+		{
+			takeMeterReading.setVisibility(View.VISIBLE);
+		}
+
+		/*newCustomerNameValue = (EditText) findViewById(R.id.newCustomerName);
+
+		currentMeterNo = (TextView) findViewById(R.id.meterNo);
+		newMeterNoValue = (EditText) findViewById(R.id.newMeterNo);
+
+		flatNo = (TextView) findViewById(R.id.flatNo);
+		newFlatValue = (EditText) findViewById(R.id.newFlatNo);
+
+		floorNo = (TextView) findViewById(R.id.floorNo);
+		newFloorValue = (EditText) findViewById(R.id.newFloorNo);
+
+		plotNo = (TextView) findViewById(R.id.plotNo);
+		newPlotValue = (EditText) findViewById(R.id.newPlotNo);
+
+		wingNo = (TextView) findViewById(R.id.wingNo);
+		newWingValue = (EditText) findViewById(R.id.newWingNo);
+
+		buildName = (TextView) findViewById(R.id.buildName);
+		newBuildingNameValue = (EditText) findViewById(R.id.newBuildName);
+
+		currentContactNoMobile = (TextView) findViewById(R.id.contactMobileNo);
+		newContactNoMobileValue = (EditText) findViewById(R.id.newContactNoMobile);
+
+		currentContactNoHome = (TextView) findViewById(R.id.contactHomeNo);
+		newContactNoHomeValue = (EditText) findViewById(R.id.newContactNoHome);
+
+		currentContactNoOffice = (TextView) findViewById(R.id.contactOfficeNo);
+		newContactNoOfficeValue = (EditText) findViewById(R.id.newContactNoOffice);
+
+		editTextRemark = (EditText) findViewById(R.id.custUpdate_EditTextRemark);
+		*/currentAddressTV1 = (TextView) findViewById(R.id.AddressText);
+		currentAddressTV2 = (TextView) findViewById(R.id.Address);
+
+		/*
+				cancel_button = (Button) findViewById(R.id.cancel_button);
+				cancel_button.setOnClickListener(new OnClickListener()
+				
+				
+				{
+
+					@Override
+					public void onClick(View v)
+					{
+						finish();
+					}
+				});
+		*/
+		/*next_button = (Button) findViewById(R.id.next_button);
+		next_button.setOnClickListener(new OnClickListener()
+		{
+
+			@Override
+			public void onClick(View v)
+			{
+				String meterNo = newMeterNoValue.getText().toString();
+				String contactHome = newContactNoHomeValue.getText().toString();
+				String contactMobile = newContactNoMobileValue.getText().toString();
+				String contactOffice = currentContactNoOffice.getText().toString();
+				String custName = newCustomerNameValue.getText().toString();
+				String flatValue = newFlatValue.getText().toString();
+				String floorValue = newFloorValue.getText().toString();
+				String plotValue = newPlotValue.getText().toString();
+				String wingValue = newWingValue.getText().toString();
+				String buildName = newBuildingNameValue.getText().toString();
+				String remarkValue = editTextRemark.getText().toString();
+
+				
+				 * if (custName.equals("") && flatValue.equals("") &&
+				 * floorValue.equals("") && plotValue.equals("") &&
+				 * wingValue.equals("") && buildName.equals("") &&
+				 * remarkValue.equals("") && meterNo.equals("") &&
+				 * contactHome.equals("") && contactMobile.equals("") &&
+				 * contactOffice.equals("")) { if (menu != null) { menu.clear();
+				 * menu.add("Cancel"); } } else
+				 if ((!meterNo.equals("") || (!contactHome.equals("") || (!contactMobile.equals("")) || (!contactOffice
+						.equals(""))))
+						&& (custName.equals("") && (flatValue.equals("") && (floorValue.equals("") && (plotValue
+								.equals("") && (wingValue.equals("") && (buildName.equals("") && (remarkValue
+								.equals("")))))))))
+				{
+					updateDataInBo();
+					Intent i = new Intent(UpdateCustomerInfoActivity.this, UpdateCustomerFinalSummaryActivity.class);
+					i.putExtra("updateCustomer", getUpdateCustomerJson);
+					i.putExtra("selectedCustomerJSON", selectedCustomerJson);
+					startActivity(i);
+					finish();
+				}
+				else
+				{
+					Toast.makeText(UpdateCustomerInfoActivity.this, "Please Select Document Type.", Toast.LENGTH_SHORT).show();
+				}
+			}
+		});*/
+
+	}
+
+	private void commonConfimrationDialog(final String type)
+	{
+
+		AlertDialog.Builder builder = new AlertDialog.Builder(UpdateCustomerInfoActivity.this);
+		builder.setCancelable(true);
+
+		builder.setMessage("All details have been verified and updated wherever applicable." + "\r\n"
+				+ this.getString(R.string.all_details_have_been_verified_and_updated_wherever_applicable));
+
+		builder.setInverseBackgroundForced(true);
+		builder.setPositiveButton("Ok", new DialogInterface.OnClickListener()
+		{
+			@Override
+			public void onClick(DialogInterface dialog, int which)
+			{
+				if (type.equalsIgnoreCase(meterReadingType))
+				{
+
+					try
+					{
+						jsonoCustomerDetails = new JSONObject(selectedCustomerJson);
+					}
+					catch (JSONException e)
+					{
+
+						handler.logCrashReport(e);
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					String mroNumber = jsonoCustomerDetails.getValue(Constants.KEY_MRO_NUMBER).toString();
+
+					//meterReadingBO.setMroNumber(mroNumber);
+					MobiculeLogger.verbose("mroNumber " + mroNumber);
+					MobiculeLogger.verbose("meterReadingBO " + meterReadingBO);
+
+					// *********** Setting BO ********************
+					//setMeterReadingBO();
+
+					// *********** Setting up BO Over ********************
+					Intent intent = new Intent(UpdateCustomerInfoActivity.this, MeterReading.class);
+
+					MobiculeLogger.debug("Customer Summary " + jsonoCustomerDetails);
+					intent.putExtra("selectedCustomerJSON", selectedCustomerJson);
+					intent.putExtra("activity", "CustomerSummary");
+					startActivity(intent);
+					dialog.dismiss();
+
+				}
+				/*else if (type.equalsIgnoreCase(updateCustomerDataType))
+				{
+
+					Intent intent = new Intent(CustomerSummary.this, UpdateCustomerSummaryActivity.class);
+					intent.putExtra("selectedCustomerJSON", selectedCustomerJson);
+					if (jsonoCustomerDetails != (null))
+					{
+						intent.putExtra("updateCustomer", jsonoCustomerDetails.toString());
+
+					}
+
+					startActivity(intent);
+
+				}*/
+
+			}
+
+/*			private void setMeterReadingBO()
+			{
+
+				try
+				{
+
+					jsonoCustomerDetails = new JSONObject(selectedCustomerJson);
+					String mroNumber = jsonoCustomerDetails.getValue(Constants.KEY_MRO_NUMBER).toString();
+
+					meterReadingBO.setMroNumber(mroNumber);
+
+				}
+				catch (JSONException e)
+				{
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
+			}*/
+		});
+		builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener()
+		{
+			@Override
+			public void onClick(DialogInterface dialog, int which)
+			{
+				dialog.dismiss();
+			}
+		});
+		AlertDialog alert = builder.create();
+		alert.show();
+
+	}
+
+	@Override
+	public void onClick(View v)
+	{
+
+		switch (v.getId())
+		{
+			case R.id.b_contactUpdate:
+				Intent intent = new Intent(UpdateCustomerInfoActivity.this, UpdateContactNoActivity.class);
+				intent.putExtra("updateCustomer", getUpdateCustomerJson);
+				intent.putExtra("selectedCustomerJSON", selectedCustomerJson);
+				startActivity(intent);
+				break;
+
+			case R.id.b_meterUpadte:
+				Intent intent2 = new Intent(UpdateCustomerInfoActivity.this, UpdateMeterActivity.class);
+
+				intent2.putExtra("updateCustomer", getUpdateCustomerJson);
+				intent2.putExtra("selectedCustomerJSON", selectedCustomerJson);
+				startActivity(intent2);
+				break;
+
+			case R.id.b_addressUpadte:
+
+				Intent intent3 = new Intent(UpdateCustomerInfoActivity.this, UpdateAddressActivity.class);
+				intent3.putExtra("updateCustomer", getUpdateCustomerJson);
+				intent3.putExtra("selectedCustomerJSON", selectedCustomerJson);
+				startActivity(intent3);
+				break;
+			case R.id.b_takemeterreading:
+
+				commonConfimrationDialog(meterReadingType);
+				break;
+			default:
+				break;
+		}
+
+	}
+
+	/*@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+
+		if (item.getTitle().equals("Next"))
+		{
+			updateDataInBo();
+			Intent i = new Intent(UpdateCustomerInfoActivity.this, UpdateCustomerFinalSummaryActivity.class);
+			i.putExtra("updateCustomer", getUpdateCustomerJson);
+			i.putExtra("selectedCustomerJSON", selectedCustomerJson);
+			startActivity(i);
+			finish();
+		}
+
+		if (item.getTitle().equals("Cancel"))
+		{
+			finish();
+		}
+		return super.onOptionsItemSelected(item);
+	}*/
+
+	/*private void updateDataInBo()
+	{
+		updateCustomerBO.setNewFlatNumber(newFlatValue.getText().toString().trim());
+		updateCustomerBO.setNewFloor(newFloorValue.getText().toString().trim());
+		updateCustomerBO.setNewBuildName(newBuildingNameValue.getText().toString().trim());
+		updateCustomerBO.setNewCustomerName(newCustomerNameValue.getText().toString().trim());
+		updateCustomerBO.setNewWing(newWingValue.getText().toString().trim());
+		updateCustomerBO.setNewPlot(newPlotValue.getText().toString().trim());
+		updateCustomerBO.setNewContactNoMobile(newContactNoMobileValue.getText().toString().trim());
+		updateCustomerBO.setNewContactNoHome(newContactNoHomeValue.getText().toString().trim());
+		updateCustomerBO.setNewContactNoOffice(newContactNoOfficeValue.getText().toString().trim());
+		updateCustomerBO.setNewMeterNO(newMeterNoValue.getText().toString().trim());
+		updateCustomerBO.setRemark(editTextRemark.getText().toString().trim());
+
+	}*/
+	
+	@Override
+	public void onBackPressed()
+	{
+		super.onBackPressed();
+		
+		finish();
+
+	}
+}

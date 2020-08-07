@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <item
+        android:id="@+id/takemeterreading"
+        android:title="@string/meterreading"
+        android:visible="false">
+   </item>
+    
+   <item
+        android:id="@+id/jointicketing"
+        android:title="@string/jointicketing"
+        android:visible="false">
+   </item>
+   
+   <item
+        android:id="@+id/updatecustomer"
+        android:title="@string/updatecust"
+        android:visible="false">
+   </item>
+    
+</menu>

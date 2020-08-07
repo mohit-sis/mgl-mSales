@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: VersionControl">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mglclientcore/lib/VersionControl.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

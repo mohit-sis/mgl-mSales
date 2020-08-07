@@ -1,0 +1,340 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background1"
+    tools:context="com.example.mglui.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/ll_headerLayout"
+        style="@style/TitleBar"
+        android:layout_alignParentTop="true" >
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:onClick="goHome"
+            android:src="@drawable/title_home" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:text="@string/otherInfo" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:src="@drawable/mahanagarlogosmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/splashImageViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_headerLayout"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/SplashImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/msales" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_noBurners"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashImageViewLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/tv_noBurners"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:text="@string/no_burners"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sp_noBurners"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_noOfGeysers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_noBurners"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/tv_noOfGeysers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:text="@string/no_geysers"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sp_noOfGeysers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <!--
+           <LinearLayout
+                android:id="@+id/ll_meterHose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+    -->
+
+    <LinearLayout
+        android:id="@+id/ll_meterHose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_noOfGeysers"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/meterHoseTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="MGL Gas Hose Available"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_meterHoseRadiobuttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageyesmeterHose"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/unselected_radio_button" />
+
+                <TextView
+                    android:id="@+id/yesmeterHose_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Yes"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imagenometerHose"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/unselected_radio_button" />
+
+                <TextView
+                    android:id="@+id/nometerHose_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--
+         <LinearLayout
+        android:id="@+id/ll_meterHose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_noOfGeysers"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_meterHose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gas_hose"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/rg_meterHose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <RadioButton
+                android:id="@+id/rb_yes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/rb_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/no" />
+        </RadioGroup>
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/ll_meterHoseLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_meterHose"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_meter_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/message"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_hindi_text_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/hindi_text_icon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/i" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Spinner
+            android:id="@+id/sp_meter_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_meterHoseLayout"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/remark"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_remarks"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000" />
+    
+
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center">
+<!--
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0.5"
+            android:background="#333333"
+            android:padding="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="14dp" />-->
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0.5"
+            android:background="@color/button_bg"
+            android:padding="10dp"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </LinearLayout>
+    <!-- </LinearLayout> -->
+
+</RelativeLayout>

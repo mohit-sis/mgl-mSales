@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_headerLayout"
+        style="@style/TitleBar" >
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:onClick="goHome"
+            android:src="@drawable/title_home" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:text="Customer Update" />
+
+         <ImageView style="@style/TitleBarSeparator" />
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:src="@drawable/mahanagarlogosmall" /> 
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/splashImageViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_headerLayout"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/SplashImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/msales" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_buttonsLayout"
+        android:layout_below="@+id/splashImageViewLayout"
+        android:layout_marginLeft="3dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/bpNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="BP Number: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bpNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/mroNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="MRO Number: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/mroNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+            
+             <TextView
+                android:id="@+id/CANumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="CA Number: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/CANumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/customerNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Customer Name: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/customerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/contactNoMobileText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Customer Contact Number (Mobile): "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/contactMobileNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/AddressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Address "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/b_contactUpdate"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.5"
+                android:background="#bc3751"
+                android:text="Contact Update"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/b_meterUpadte"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="0.5"
+                android:background="#bc3751"
+                android:text="Meter Update"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <!--
+             <Button
+            android:id="@+id/b_addressUpadte"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Address Update"
+             android:background="#bc3751"
+            android:textColor="@color/white" />
+            -->
+
+            <Button
+                android:id="@+id/b_addressUpadte"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.5"
+                android:background="#bc3751"
+                android:text="Address Update"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/b_takemeterreading"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="0.5"
+                android:background="#bc3751"
+                android:text="Take Meter Reading"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

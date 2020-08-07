@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/build/intermediates/bundles/default/libs/json_test.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6199f796a8187d1ae18fa0b41efd8c038d3ac9ca">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/8/json_test_ddbb3a5f8416ca506f1d6f9c2dc2b5de52a4b3c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/build/intermediates/bundles/default/libs/system_component_lite_1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="11b3d71ba463579e72b70b52feace1a0faa75b7c">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/8/system_component_lite_1.0_ba2934aeb037d86c327f35281fd7ce13dc6c2041/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/build/intermediates/bundles/default/libs/android-component-logging.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8a8a834acee345cc2ee76dce4b895b67b3c9fc53">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/8/android-component-logging_ce9af116bb65f25f130ca79ebefb3ff9e2b33a57/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/build/intermediates/bundles/default/libs/VersionControl.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3ee2d8809b18115c94709c456e8ea33053313556">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/8/VersionControl_0be79b72990e554a456306385a559e970746b620/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.android/build-cache/91f7d0126fd213066e6b1adde5207b8ed75c61ff/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f9ac1e4efc1d2af320ffc8497af182b987ab89ac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/build/intermediates/bundles/default/libs/android-support-v4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="0c4e6930aae930e5ac8df93e6b73688780918351">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/8/android-support-v4_5d0ba39dba6e4896675fb893fa431d57c6243ba9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.android/build-cache/6e9f3282af956a336b17d87f3f838bebe198423b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aeb2e95aec8d73d9f33fbc8d4c6dbfaf821e3ead/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.android/build-cache/f3b36587c9640f7db23ab2bb57f889c495678562/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c20b6bbc10846d6da300102e39a68bd5c3cb93de/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/build/intermediates/bundles/default/libs/jackson-all-1.9.11.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ed5d074eeb12d0725e0c6cb7675e8d1b17fc64b8">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/8/jackson-all-1.9.11_9ec1774e37fc043861efef99605b9be26a951944/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/build/intermediates/bundles/default/libs/mobicule-crash-notifier-v2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="018260886f2df8eda2875791f3320cc3879e567d">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/8/mobicule-crash-notifier-v2.1_000f0426b9207241410f57f506856deef722081f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.android/build-cache/d154fa5dfc6a7817e610c413121e42b61347cf0e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7e9a4d49ef4aff1f9e1c75d8f08295b8c0c1d160/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0_e981808c3ab1ab98b3b59afd64259dd3c6f8c556/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.android/build-cache/6740012b51edbda86210e5311375361701ed72a1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/classes_91aa2f6107a3f9e36bb6037512280f61b4be6e59/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.android/build-cache/5d2ab603d180d96142b29ba33338537738178d7c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e34ee03d20acba418ae0908e00649a843062c3d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mglclientcore/build/libs/mglclientcore.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4578165a40fcd7293a6a82d7542e2d009baa2a6b">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/4/mglclientcore_d5c2ac32780bfaaeb2e58cd32644d34373199dcc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0_5e7049e3b9308505b119994fc185a89b588b92a5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.android/build-cache/d92d75a30b4dcd8aa4ee66d3032872ae702fa1f4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/classes_273b7b83aff6c5b285f467e580cb22074e62edb2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/build/intermediates/bundles/default/libs/android-component-logging.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8a8a834acee345cc2ee76dce4b895b67b3c9fc53">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/8/android-component-logging_ce9af116bb65f25f130ca79ebefb3ff9e2b33a57/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/build/intermediates/bundles/default/libs/VersionControl.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3ee2d8809b18115c94709c456e8ea33053313556">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/8/VersionControl_0be79b72990e554a456306385a559e970746b620/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/build/intermediates/bundles/default/libs/system_component_lite_1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="11b3d71ba463579e72b70b52feace1a0faa75b7c">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/8/system_component_lite_1.0_ba2934aeb037d86c327f35281fd7ce13dc6c2041/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.android/build-cache/91f7d0126fd213066e6b1adde5207b8ed75c61ff/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f9ac1e4efc1d2af320ffc8497af182b987ab89ac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.1.0_298033566fee76cc04087d0bdf8f4aadafa5e5d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.android/build-cache/f3b36587c9640f7db23ab2bb57f889c495678562/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c20b6bbc10846d6da300102e39a68bd5c3cb93de/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/build/intermediates/bundles/default/libs/android-support-v4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="0c4e6930aae930e5ac8df93e6b73688780918351">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/8/android-support-v4_5d0ba39dba6e4896675fb893fa431d57c6243ba9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.android/build-cache/6e9f3282af956a336b17d87f3f838bebe198423b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aeb2e95aec8d73d9f33fbc8d4c6dbfaf821e3ead/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/build/intermediates/bundles/default/libs/jackson-all-1.9.11.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ed5d074eeb12d0725e0c6cb7675e8d1b17fc64b8">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/8/jackson-all-1.9.11_9ec1774e37fc043861efef99605b9be26a951944/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.android/build-cache/066efbdf3def50796fbd6862d1380383f51e3a18/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/classes_76ddbfc1e6d1bf16c06578d3c65d2f550b774233/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/build/intermediates/bundles/default/libs/json_test.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6199f796a8187d1ae18fa0b41efd8c038d3ac9ca">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/8/json_test_ddbb3a5f8416ca506f1d6f9c2dc2b5de52a4b3c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.android/build-cache/066efbdf3def50796fbd6862d1380383f51e3a18/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/classes_76ddbfc1e6d1bf16c06578d3c65d2f550b774233/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0_e981808c3ab1ab98b3b59afd64259dd3c6f8c556/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.android/build-cache/6740012b51edbda86210e5311375361701ed72a1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/classes_91aa2f6107a3f9e36bb6037512280f61b4be6e59/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.1.0_298033566fee76cc04087d0bdf8f4aadafa5e5d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/build/intermediates/bundles/default/libs/mobicule-crash-notifier-v2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="018260886f2df8eda2875791f3320cc3879e567d">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/8/mobicule-crash-notifier-v2.1_000f0426b9207241410f57f506856deef722081f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0_5e7049e3b9308505b119994fc185a89b588b92a5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.android/build-cache/d92d75a30b4dcd8aa4ee66d3032872ae702fa1f4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/classes_273b7b83aff6c5b285f467e580cb22074e62edb2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.android/build-cache/5d2ab603d180d96142b29ba33338537738178d7c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e34ee03d20acba418ae0908e00649a843062c3d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="f9d4833c15b49f2a33596c450b2655338a76cd01">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/4/classes_b0a7fb37bed539640691a79708b33c1f0f8b4ada/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/satish/.android/build-cache/d154fa5dfc6a7817e610c413121e42b61347cf0e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="/home/satish/New_Projects_Workspace/Android_Studio/MGL/MGL_MeterReading/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7e9a4d49ef4aff1f9e1c75d8f08295b8c0c1d160/classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout style="@style/TitleBar" >
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:onClick="goHome"
+            android:src="@drawable/title_home" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:text="Summary" />
+
+       <ImageView style="@style/TitleBarSeparator" />
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:src="@drawable/mahanagarlogosmall" /> 
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/splashImageViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_container"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/SplashImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/msales" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/buttonsLayout"
+        android:layout_below="@+id/splashImageViewLayout"
+        android:layout_marginLeft="5dp"
+        android:background="@color/background1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bpnum_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BP Number: "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bpnumsummary_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/mronum_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MRO Number: "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mronumsummary_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/mruCodeSummery_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MRU Code: "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mruCodeSummary_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/meternum_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Meter Number: "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/custMeterSummary_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/custcanumberTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="CA Number: "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/custcanumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/custnamesummary_View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Customer Name: "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/custNameSummary_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/custcontnum_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Customer Contact Number(Mobile): "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/custContactNum_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/custlandlinenum_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Customer Contact Number(Residence): "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/custlandlinenum_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/custofficenum_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Customer Contact Number(Office): "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/custofficenum_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+
+            <!--
+            <TextView
+                android:id="@+id/cust_previous_reading_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Customer's Previous Reading: "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cust_previous_reading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+            -->
+
+            <TextView
+                android:id="@+id/custAdd_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Address: "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/custAddress_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+
+            
+
+            <TextView
+                android:id="@+id/meterimage_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Meter Image1: "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="5dip" />
+
+            <TextView
+                android:id="@+id/meterimage2_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Meter Image2: "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageview2"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="5dip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/meterimage3_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Meter Image3: "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="gone"  />
+
+            <ImageView
+                android:id="@+id/imageview3"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="5dip"
+                android:visibility="gone"  />
+
+            <TextView
+                android:id="@+id/current_meterreading_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Current Meter Reading: "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/current_meterreading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:visibility="gone" />
+            
+              <TextView
+                android:id="@+id/current_LPGSupplier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="LPG Supplier: "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/LPGSupplier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:visibility="gone" />
+            
+             <TextView
+                android:id="@+id/current_Relocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Relocation: "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/Relocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:visibility="gone" />
+            
+
+            <TextView
+                android:id="@+id/current_remarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remarks: "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/remarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                /> 
+
+            <TextView
+                android:id="@+id/unable_reason_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Reason for Unable to take Meter Reading: "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unable_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:visibility="gone" />
+            
+            <TextView
+                android:id="@+id/PrimaryMsg_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Message from Meter Reader (Primary) : "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/PrimaryMsg_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>  
+
+            <TextView
+                android:id="@+id/summary_TextViewMsgFromMr_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Message From Meter Reader:"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/summary_TextViewMsgFromMr_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:weightSum="1" 
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.5"
+            android:background="#333333"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+        
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.5"
+            android:background="#bc3751"
+            android:text="Submit"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#333333"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#bc3751"
+            android:text="Submit"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/background1">
+    
+     <LinearLayout
+         android:id="@+id/ll_headerLayout"
+        style="@style/TitleBar"
+        android:layout_alignParentTop="true" >
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:onClick="goHome"
+            android:src="@drawable/title_home" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:text="Other Info. Summary" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:src="@drawable/mahanagarlogosmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/splashImageViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_headerLayout"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/SplashImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/msales"/>
+        
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" 
+        android:layout_below="@+id/splashImageViewLayout"
+        android:layout_above="@+id/ll_buttons">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- <LinearLayout
+                android:id="@+id/ll_bpnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:weightSum="1" > -->
+
+                <TextView
+                    android:id="@+id/tv_bpno1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bpnumber" 
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_bpno2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+                
+            <!-- </LinearLayout> -->
+
+           <!--  <LinearLayout
+                android:id="@+id/ll_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_bpnumber"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+ -->
+                <TextView
+                    android:id="@+id/tv_code1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/code" />
+
+                <TextView
+                    android:id="@+id/tv_code2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+           <!--  </LinearLayout> -->
+
+           <!--  <LinearLayout
+                android:id="@+id/ll_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_code"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1" > -->
+
+                <TextView
+                    android:id="@+id/tv_message1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/message1" />
+
+                <TextView
+                    android:id="@+id/tv_message2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+           <!--  </LinearLayout> -->
+
+         <!--    <LinearLayout
+                android:id="@+id/ll_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_message"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1" > -->
+
+                <TextView
+                    android:id="@+id/tv_remark1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/remark" />
+
+                <TextView
+                    android:id="@+id/tv_remark2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+        <!--     </LinearLayout> -->
+
+          <!--   <LinearLayout
+                android:id="@+id/ll_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_remark"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+   -->              <TextView
+                    android:id="@+id/tv_date1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/date" />
+
+                <TextView
+                    android:id="@+id/tv_date2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+            <!-- </LinearLayout>
+
+  -->          <!--  <LinearLayout
+                android:id="@+id/ll_photo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_date"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" > -->
+
+                <TextView
+                    android:id="@+id/tv_photo1"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="@string/photo1" />
+
+                <ImageView
+                    android:id="@+id/iv_photo1"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                     android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"/>
+          <!--   </LinearLayout> -->
+
+           <!--  <LinearLayout
+                android:id="@+id/ll_photo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_photo1"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" > -->
+
+                <TextView
+                    android:id="@+id/tv_photo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/photo2" />
+
+                <ImageView
+                    android:id="@+id/iv_photo2"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"/>
+           <!--  </LinearLayout> -->
+
+          <!--   <LinearLayout
+                android:id="@+id/ll_photo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_photo2"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" > -->
+
+             <!--    <TextView
+                    android:id="@+id/tv_photo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/photo" />
+
+                <ImageView
+                    android:id="@+id/iv_photo3"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/photo" /> -->
+           <!--  </LinearLayout> -->
+
+           <!--  <LinearLayout
+                android:id="@+id/ll_burner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_photo3"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1" > -->
+
+                <TextView
+                    android:id="@+id/tv_burner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/burner" />
+
+                <TextView
+                    android:id="@+id/tv_burner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+            <!-- </LinearLayout> -->
+
+           <!--  <LinearLayout
+                android:id="@+id/ll_geyser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_burner"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1" > -->
+                
+                <TextView
+                    android:id="@+id/tv_geyser1"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="@string/geyser" />
+
+                <TextView
+                    android:id="@+id/tv_geyser2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+           <!--  </LinearLayout> -->
+
+          <!--   <LinearLayout
+                android:id="@+id/ll_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_geyser"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1" > -->
+
+               <!--  <TextView
+                    android:id="@+id/tv_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/name" />
+
+                <TextView
+                    android:id="@+id/tv_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/> -->
+            <!-- </LinearLayout> -->
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0.5"
+            android:background="#333333"
+            android:padding="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0.5"
+            android:background="@color/button_bg"
+            android:padding="10dp"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</RelativeLayout>

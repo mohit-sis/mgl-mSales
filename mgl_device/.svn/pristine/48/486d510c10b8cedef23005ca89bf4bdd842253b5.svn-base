@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/TitleBar" >
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:onClick="goHome"
+            android:src="@drawable/title_home" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:text="Customer Update" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:src="@drawable/mahanagarlogosmall" /> 
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/SplashImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/msales" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/widget60"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/bpNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="BP Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bpNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/mroNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="MRO Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/mroNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/customerNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Customer Name: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/customerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/ll_meterNumberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/meternum_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="Current Meter Number: "
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/meterNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/newMeternum_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="New Meter Number: "
+                    android:textColor="#ff000000"
+                    android:visibility="gone" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/newMeterNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000"
+                    android:visibility="gone" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_contactNumberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/contactNumberText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="Current Contact Number: "
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/contactNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/NewcontactNumberText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="New Contact Number: "
+                    android:textColor="#ff000000"
+                    android:visibility="gone" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/newcontactNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000"
+                    android:visibility="gone" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/currentResidentialContactNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="Current Residential Contact Number:"
+                    android:textColor="#ff000000"
+                    android:visibility="gone" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/currentResidentialContactNumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/newResidentialContactNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="New Residential Contact Number:"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/newResidentialContactNumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/currentOfficeContactNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="Current Office Contact Number:"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/currentOfficeContactNumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/newOfficeContactNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="New Office Contact Number:"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/newOfficeContactNumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_addressUpdateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_currentFlat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="Current Flat:"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_currentFlatText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_newFlat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="New Flat:"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_newFlatText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_currentFloor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="Current Floor:"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_currentFloorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_newFloor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="New Floor:"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_newFloorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                
+                <TextView
+                    android:id="@+id/tv_currentWing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="Current Wing:"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_currentWingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_newWing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="New Wing:"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_newWingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_currentPlot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="Current Plot:"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_currentPlotText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_newPlot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="New Plot:"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_newPlotText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_currentBuildingName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="Current Building name:"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_currentBuildingNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_newBuildingName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="New Building name:"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_newBuildingNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_documentType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="Document type:"
+                    android:textColor="#ff000000"
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_documentTypeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="Image 1:"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+                
+                 <ImageView
+                    android:id="@+id/iv_image1"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="Image 2"
+                    android:textColor="#ff000000"
+                    android:visibility="gone" >
+                </TextView>
+                
+                <ImageView
+                    android:id="@+id/iv_image2"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"/>
+                
+                 <TextView
+                    android:id="@+id/tv_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="Image 3"
+                    android:textColor="#ff000000"
+                    android:visibility="gone" >
+                </TextView>
+                
+                 <ImageView
+                    android:id="@+id/iv_image3"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"/>
+                
+            </LinearLayout>
+            
+             <TextView
+                    android:id="@+id/tv_remarksLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="Remark:"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_remarksValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#ff000000" 
+                    android:visibility="gone">
+                </TextView>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!--
+        <Button
+            android:id="@+id/contactNumberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/contactNumber"
+            android:layout_alignLeft="@+id/meterNumberbutton"
+            android:padding="15px"
+            android:layout_marginTop="5dip"
+            android:text="Edit" >
+        </Button>
+
+        <Button
+            android:id="@+id/meterNumberbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/meterNumber"
+            android:layout_alignParentRight="true"
+            android:padding="15px"
+            android:layout_marginTop="5dip"
+            android:text="Edit" >
+        </Button>
+-->

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/TitleBar" >
+        
+        <ImageButton
+            android:id="@+id/menu_button"
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home_menu"
+            android:src="@drawable/android_menu_square_40x40" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:text="Home" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:src="@drawable/mahanagarlogosmall" /> 
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/SplashImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/msales" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/home_btn_feature1"
+            style="@style/HomeButton"
+            android:drawableTop="@drawable/home_button3"
+            android:onClick="onClickFeature"
+            android:text="@string/title_feature1"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/home_btn_feature6"
+            style="@style/HomeButton"
+            android:drawableTop="@drawable/random_reading"
+            android:onClick="onClickFeature"
+            android:text="@string/title_feature6"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/home_btn_feature3"
+            style="@style/HomeButton"
+            android:drawableTop="@drawable/save"
+            android:onClick="onClickFeature"
+            android:text="@string/title_feature3"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/home_btn_feature5"
+            style="@style/HomeButton"
+            android:drawableTop="@drawable/downloadnew"
+            android:onClick="onClickFeature"
+            android:text="@string/title_feature5"
+            android:textSize="15sp" />
+        <!--
+           <Button
+            android:id="@+id/home_btn_feature4"
+            style="@style/HomeButton"
+            android:drawableTop="@drawable/reportsnew"
+            android:onClick="onClickFeature"
+            android:text="@string/title_feature4"
+            android:textSize="15sp" />
+        -->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/alertTextview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="10px"
+            android:text="failure"
+            android:textColor="#DF013A" 
+            android:visibility="gone"/>
+
+        <!--
+            <Button
+            android:id="@+id/home_btn_feature5"
+            style="@style/HomeButton"
+            android:drawableTop="@drawable/downloadnew"
+            android:onClick="onClickFeature"
+            android:text="@string/title_feature5"
+            android:textSize="15sp" />
+        -->
+
+        <TextView
+            android:id="@+id/alertTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/alertTextview2"
+            android:layout_marginTop="29dp"
+            android:gravity="center_horizontal"
+            android:text="alerttext"
+            android:textColor="#DF013A" 
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

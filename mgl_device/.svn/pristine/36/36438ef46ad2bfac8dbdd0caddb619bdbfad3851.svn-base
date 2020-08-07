@@ -1,0 +1,290 @@
+[
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/autotrigger.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/autotrigger.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/update.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/update.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/update_customer_data.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/update_customer_data.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/update_address.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/update_address.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/search.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/search.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/login.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/login.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/failtotake_reading.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/failtotake_reading.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/mybookwalk.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/mybookwalk.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/meterupadte.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/meterupadte.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/custom_dialog_join_ticketing.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/custom_dialog_join_ticketing.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/meter_readingmenu.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/meter_readingmenu.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/join_ticketing_summary.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/join_ticketing_summary.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/update_meter_num.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/update_meter_num.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/join_ticketing.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/join_ticketing.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/completed_customer.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/completed_customer.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/implausibereading.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/implausibereading.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/saveimage.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/saveimage.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/listviewimage.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/listviewimage.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/activity_saved_onmlist.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/activity_saved_onmlist.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/reports.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/reports.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/activity_onmplanning_reading.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/activity_onmplanning_reading.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/inspection_details.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/inspection_details.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/customer_summary.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/customer_summary.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/layout_popup_menu.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/layout_popup_menu.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/activity_onm_summary.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/activity_onm_summary.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/verify_meter_reading.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/verify_meter_reading.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/updatenew.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/updatenew.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/unableto_meterreading.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/unableto_meterreading.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/downloadbookwalk.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/downloadbookwalk.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/simplerow.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/simplerow.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/alert_dialog_custom.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/alert_dialog_custom.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/splash.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/splash.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/signature_layout.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/signature_layout.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/incompleted_customer.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/incompleted_customer.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/activity_onm_takepicture.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/activity_onm_takepicture.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/summary.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/summary.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/searchoutput.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/searchoutput.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/search_summary.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/search_summary.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/activity_update_customer_final_summary.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/activity_update_customer_final_summary.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/saved_reading.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/saved_reading.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/bookwalksequence.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/bookwalksequence.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/activity_contact_update.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/activity_contact_update.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/search_customer_summary.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/search_customer_summary.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/join_ticketing_final_summary.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/join_ticketing_final_summary.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/image_capture.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/image_capture.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/camera.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/camera.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/updatecustomerlist.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/updatecustomerlist.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/document_image.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/document_image.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/mainmenu.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/mainmenu.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/update_cont_num.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/update_cont_num.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/newsummary.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/newsummary.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/new_customer_update.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/new_customer_update.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/userinfo_row_search.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/userinfo_row_search.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/pop_up_menu.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/pop_up_menu.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/total_customer.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/total_customer.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/random_meter_reading_new.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/random_meter_reading_new.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/saved_meter_reading.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/saved_meter_reading.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/customer_info.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/customer_info.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/meter_reading.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/meter_reading.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/newupdate.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/newupdate.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/inspection.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/inspection.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/updatesaved.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/updatesaved.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/diagnostic.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/diagnostic.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/random_reading_form.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/random_reading_form.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/alert_dialog_list_item.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/alert_dialog_list_item.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/userinfo_row.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/userinfo_row.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/saved_onm_planning_summary.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/saved_onm_planning_summary.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/customspinner.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/customspinner.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/userinfo_rownew.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/userinfo_rownew.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/gasburning.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/gasburning.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/layout/listview.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/layout/listview.xml"
+    }
+]

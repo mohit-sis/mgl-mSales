@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.0"
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.mahanagar"
+        minSdkVersion  14
+        targetSdkVersion 28
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            multiDexEnabled true
+        }
+
+
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+   // compile('com.android.support:support-v4:26.0.+')
+    //compile 'com.android.support:support-v4'
+    compile project(':mobidbcomponent')
+  // compile 'com.android.support:appcompat-v7:26.1.0'
+
+    compile project(':mglclientcore')
+
+    //compile 'com.android.support:support-v4:26.0.0'
+    //'com.android.support:support-v4:26.1.0'
+//    compile 'com.android.support:appcompat-v7:26.1.0'
+//    compile 'frankiesardo:icepick:3.2.0'
+    compile 'id.zelory:compressor:1.0.4'
+
+}

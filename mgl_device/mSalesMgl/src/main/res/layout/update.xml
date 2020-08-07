@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/TitleBar" >
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:onClick="goHome"
+            android:src="@drawable/title_home" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:text="Customer Update" />
+
+         <ImageView style="@style/TitleBarSeparator" />
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:src="@drawable/mahanagarlogosmall" /> 
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/SplashImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/msales" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/widget60"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/newMeterNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/newMeternum_TextView"
+            android:layout_marginTop="5dip"
+            android:textColor="#ff000000"
+            android:visibility="gone" >
+        </TextView>
+
+        <Button
+            android:id="@+id/contactNumberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/contactNumber"
+            android:layout_alignLeft="@+id/meterNumberbutton"
+            android:layout_marginTop="5dip"
+            android:padding="15px"
+            android:text="Edit" >
+        </Button>
+
+        <Button
+            android:id="@+id/meterNumberbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/meterNumber"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dip"
+            android:padding="15px"
+            android:text="Edit" >
+        </Button>
+
+        <TextView
+            android:id="@+id/newMeternum_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/meterNumber"
+            android:layout_marginTop="5dip"
+            android:text="New Meter Number: "
+            android:textColor="#ff000000"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/meterNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/meternum_TextView"
+            android:layout_marginTop="5dip"
+            android:textColor="#ff000000" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/meternum_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/newcontactNumber"
+            android:layout_marginTop="5dip"
+            android:text="Current Meter Number: "
+            android:textColor="#ff000000" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/newcontactNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/NewcontactNumberText"
+            android:layout_marginTop="5dip"
+            android:textColor="#ff000000"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/NewcontactNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/contactNumber"
+            android:layout_marginTop="5dip"
+            android:text="New Contact Number: "
+            android:textColor="#ff000000"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/contactNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/contactNumberText"
+            android:layout_marginTop="5dip"
+            android:textColor="#ff000000" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/contactNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/mroNumber"
+            android:layout_marginTop="5dip"
+            android:text="Current Contact Number: "
+            android:textColor="#ff000000" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/bpNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bpNumberText"
+            android:layout_marginTop="5dip"
+            android:textColor="#ff000000" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/bpNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/customerName"
+            android:layout_marginTop="5dip"
+            android:text="BP Number: "
+            android:textColor="#ff000000" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/mroNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bpNumber"
+            android:layout_marginTop="5dip"
+            android:text="MRO Number: "
+            android:textColor="#ff000000" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/mroNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/mroNumberText"
+            android:layout_marginTop="5dip"
+            android:textColor="#ff000000" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/customerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/customerNameText"
+            android:layout_marginTop="5dip"
+            android:textColor="#ff000000" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/customerNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dip"
+            android:text="Customer Name: "
+            android:textColor="#ff000000" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

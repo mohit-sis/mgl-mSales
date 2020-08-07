@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/drawable/random_reading.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/drawable/random_reading.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/drawable/reportsnew.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/drawable/reportsnew.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/drawable/radio_button_green.png",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/drawable/radio_button_green.png"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/drawable/downloadnew.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/drawable/downloadnew.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/drawable/radio_deselect.png",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/drawable/radio_deselect.png"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/drawable/save.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/drawable/save.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/drawable/radio_select.png",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/drawable/radio_select.png"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/drawable/msalesnew.png",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/drawable/msalesnew.png"
+    }
+]

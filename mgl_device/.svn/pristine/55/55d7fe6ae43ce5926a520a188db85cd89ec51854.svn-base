@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/menu/mymenu.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/menu/mymenu.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/menu/home_screen_menu.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/menu/home_screen_menu.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/menu/jointicketingmenu.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/menu/jointicketingmenu.xml"
+    }
+]

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background1"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        style="@style/TitleBar"
+        >
+        <TextView
+            style="@style/TitleBarText"
+            android:textSize="@dimen/text_size_small"
+            android:text="Inspection Details" 
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" 
+                >
+
+                <TableRow
+                   	android:layout_marginTop="7dip"
+                    >
+            		<TextView
+		                android:id="@+id/inspectionDetails_Meter_Index_Tampered_Title"
+		                android:layout_width="0dp"
+		                android:layout_weight=".50"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="5dip"
+		                android:layout_marginRight="5dip"
+		                android:text="Meter Index Tampered "
+		                android:textColor="#000000"
+		                android:textStyle="bold" 
+                	/>
+            		<TextView
+		                android:id="@+id/inspectionDetails_Meter_Index_Tampered_Value"
+		                android:layout_width="0dp"
+		                android:layout_weight=".50"
+		                android:layout_marginTop="5dip"
+		                android:layout_marginLeft="5dip"
+		                android:layout_height="wrap_content"
+		                android:textColor="#000000" 
+                	/>
+                </TableRow>
+                
+                <TableRow
+                    android:layout_marginTop="7dip"
+                    >
+            		<TextView
+		                android:id="@+id/inspectionDetails_Meter_Index_Tampered_Remark_Title"
+		                android:layout_width="0dp"
+		                android:layout_weight=".50"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="5dip"
+		                android:layout_marginRight="5dip"
+		                android:text="Meter Index Tampered Remark"
+		                android:textColor="#000000"
+		                android:textStyle="bold" 
+                	/>
+            		<TextView
+		                android:id="@+id/inspectionDetails_Meter_Index_Tampered_Remark_Value"
+		                android:layout_width="0dp"
+		                android:layout_weight=".50"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="5dip"
+		                android:layout_marginLeft="5dip"
+		                android:textColor="#000000" 
+                	/>
+                </TableRow>
+                
+                <TableRow
+                    android:layout_marginTop="7dip"
+                    >
+            		<TextView
+		                android:id="@+id/inspectionDetails_Meter_Protection_Seal_Title"
+		                android:layout_width="0dp"
+		                android:layout_weight=".50"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="5dip"
+		                android:layout_marginRight="5dip"
+		                android:text="Meter Protection Seal"
+		                android:textColor="#000000"
+		                android:textStyle="bold" 
+                	/>
+            		<TextView
+		                android:id="@+id/inspectionDetails_Meter_Protection_Seal_Value"
+		                android:layout_width="0dp"
+		                android:layout_weight=".50"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="5dip"
+		                android:layout_marginLeft="5dip"
+		                android:textColor="#000000" 
+                	/>
+                </TableRow>
+                
+                 <TableRow
+                    android:layout_marginTop="7dip"
+                    >
+            		<TextView
+		                android:id="@+id/inspectionDetails_Current_Seal_No_Title"
+		                android:layout_width="0dp"
+		                android:layout_weight=".50"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="5dip"
+		                android:layout_marginRight="5dip"
+		                android:text="Current Seal No"
+		                android:textColor="#000000"
+		                android:textStyle="bold" 
+                	/>
+            		<TextView
+		                android:id="@+id/inspectionDetails_Current_Seal_No_Value"
+		                android:layout_width="0dp"
+		                android:layout_weight=".50"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="5dip"
+		                android:layout_marginLeft="5dip"
+		                android:textColor="#000000" 
+                	/>
+                </TableRow>
+                
+                <TableRow
+                    android:layout_marginTop="7dip"
+                    >
+            		<TextView
+		                android:id="@+id/inspectionDetails_Input_Seal_No_Title"
+		                android:layout_width="0dp"
+		                android:layout_weight=".50"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="5dip"
+		                android:layout_marginRight="5dip"
+		                android:text="Input Seal No"
+		                android:textColor="#000000"
+		                android:textStyle="bold" 
+                	/>
+            		<TextView
+		                android:id="@+id/inspectionDetails_Input_Seal_No_Value"
+		                android:layout_width="0dp"
+		                android:layout_weight=".50"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="5dip"
+		                android:layout_marginLeft="5dip"
+		                android:textColor="#000000" 
+                	/>
+                </TableRow>
+                
+                <TableRow
+                    android:layout_marginTop="7dip"
+                    >
+            		<TextView
+		                android:id="@+id/inspectionDetails_Meter_Protection_Seal_Remark_Title"
+		                android:layout_width="0dp"
+		                android:layout_weight=".50"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="5dip"
+		                android:layout_marginRight="5dip"
+		                android:text="Meter Protection Seal Remark"
+		                android:textColor="#000000"
+		                android:textStyle="bold" 
+                	/>
+            		<TextView
+		                android:id="@+id/inspectionDetails_Meter_Protection_Seal_Remark_Value"
+		                android:layout_width="0dp"
+		                android:layout_weight=".50"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="5dip"
+		                android:layout_marginLeft="5dip"
+		                android:textColor="#000000" 
+                	/>
+                </TableRow>
+                
+                <TableRow
+                    android:layout_marginTop="7dip"
+                    >
+            		<TextView
+		                android:id="@+id/inspectionDetails_Meter_ByPass_Title"
+		                android:layout_width="0dp"
+		                android:layout_weight=".50"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="5dip"
+		                android:layout_marginRight="5dip"
+		                android:text="Meter Bypass Arrangement"
+		                android:textColor="#000000"
+		                android:textStyle="bold" 
+                	/>
+            		<TextView
+		                android:id="@+id/inspectionDetails_Meter_ByPass_Value"
+		                android:layout_width="0dp"
+		                android:layout_weight=".50"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="5dip"
+		                android:layout_marginLeft="5dip"
+		                android:textColor="#000000" 
+                	/>
+                </TableRow>
+                
+                <TableRow
+                    android:layout_marginTop="7dip"
+                    >
+            		<TextView
+		                android:id="@+id/inspectionDetails_Meter_ByPass_Remark_Title"
+		                android:layout_width="0dp"
+		                android:layout_weight=".50"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="5dip"
+		                android:layout_marginRight="5dip"
+		                android:text="Meter Bypass Arrangement Remark"
+		                android:textColor="#000000"
+		                android:textStyle="bold" 
+                	/>
+            		<TextView
+		                android:id="@+id/inspectionDetails_Meter_ByPass_Remark_Value"
+		                android:layout_width="0dp"
+		                android:layout_weight=".50"
+		                android:layout_height="fill_parent"
+		                android:layout_marginTop="5dip"
+		                android:layout_marginLeft="5dip"
+		                android:textColor="#000000" 
+                	/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

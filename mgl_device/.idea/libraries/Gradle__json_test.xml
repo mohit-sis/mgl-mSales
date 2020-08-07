@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: json_test">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mglclientcore/lib/json_test.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

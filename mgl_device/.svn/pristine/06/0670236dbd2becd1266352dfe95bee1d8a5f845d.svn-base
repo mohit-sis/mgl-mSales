@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/xml/filepaths.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/xml/filepaths.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/xml/authenticator.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/xml/authenticator.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/xml/filepath.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/xml/filepath.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/xml/syncadapter.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/xml/syncadapter.xml"
+    }
+]

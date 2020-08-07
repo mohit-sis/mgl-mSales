@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/TitleBar" >
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:onClick="goHome"
+            android:src="@drawable/title_home" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:text="Customer Update" />
+
+      <ImageView style="@style/TitleBarSeparator" />
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:src="@drawable/mahanagarlogosmall" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/SplashImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/msales" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="5dip" >
+            
+            <TextView
+                android:id="@+id/bpNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="BP Number: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bpNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/mroNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="MRO Number: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/mroNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+            
+           <!--  <TextView
+                android:id="@+id/customerNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="New Customer Name: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/customerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/meterNoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="New Meter Number: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/meterNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView> -->
+            
+            <TextView
+                android:id="@+id/flatNoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="New Flat Number: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/flatNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/floorNoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="New Floor Number: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/floorNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/plotNoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="New Plot Number: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/plotNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/wingNoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="New Wing Number: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/wingNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/buildNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="New Building Name: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/buildName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+            
+            <!-- <TextView
+                android:id="@+id/contactNoMobileText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="New Contact Number (Mobile): "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/contactMobileNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/contactNoHomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="New Contact Number (Home): "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/contactHomeNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/contactNoOfficeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="New Contact Number (Office): "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/contactOfficeNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView> -->
+            
+            <TextView
+                android:id="@+id/custUpdate_TextViewRemark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Remark:"
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/customerUpdateRemark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/docListTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Document type:"
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/docType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/docImgOneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Document 1st image: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+            
+            <ImageView
+                android:id="@+id/docImgOne"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal" />
+            
+            <TextView
+                android:id="@+id/docImgTwoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Document 2nd image: "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="gone" >
+            </TextView>
+            
+            <ImageView
+                android:id="@+id/docImgTwo"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+            
+            <TextView
+                android:id="@+id/docImgThreeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Document 3rd image: "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="gone" >
+            </TextView>
+            
+            <ImageView
+                android:id="@+id/docImgThree"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="0dip"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="#333333"
+                    android:text="Cancel"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+                <Button
+                    android:id="@+id/updateButton"
+                    android:layout_width="0dip"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="#bc3751"
+                    android:text="Update"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,552 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:2:1-298:12
+	package
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml
+		INJECTED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:7:5-30
+		INJECTED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml
+		INJECTED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:6:5-28
+		INJECTED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml
+		INJECTED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:5:5-35
+uses-sdk
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:15:5-44
+MERGED from [mSalesMgl1_backup_copy_shreya_pc:mobidbcomponent:unspecified] /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/exploded-aar/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:multidex:1.0.1] /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/AndroidManifest.xml:18:5-42
+	android:targetSdkVersion
+		INJECTED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml
+		INJECTED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:15:15-41
+		INJECTED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml
+		INJECTED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml
+uses-permission#android.permission.CAMERA
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:17:5-65
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:17:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:18:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:19:5-80
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:19:22-77
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:20:5-75
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:20:22-72
+uses-permission#android.permission.INTERNET
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:21:22-64
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:22:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:23:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:24:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:25:5-79
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:25:22-76
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:26:5-81
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:26:22-78
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:27:5-89
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:27:22-86
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:28:5-77
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:28:22-74
+uses-feature#android.hardware.location.gps
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:30:5-66
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:30:19-63
+uses-feature#android.hardware.camera
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:31:5-33:36
+	android:required
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:33:9-33
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:32:9-47
+application
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:35:5-296:19
+MERGED from [mSalesMgl1_backup_copy_shreya_pc:mobidbcomponent:unspecified] /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/exploded-aar/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/unspecified/AndroidManifest.xml:11:5-26:19
+	android:label
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:38:9-41
+	android:hardwareAccelerated
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:40:9-43
+	android:icon
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:37:9-43
+		REJECTED from [mSalesMgl1_backup_copy_shreya_pc:mobidbcomponent:unspecified] /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/exploded-aar/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/unspecified/AndroidManifest.xml:13:9-38
+	android:largeHeap
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:39:9-33
+	android:allowBackup
+		ADDED from [mSalesMgl1_backup_copy_shreya_pc:mobidbcomponent:unspecified] /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/exploded-aar/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/unspecified/AndroidManifest.xml:12:9-36
+	android:theme
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:41:9-41
+	tools:replace
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:42:9-37
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:36:9-84
+activity#com.mobicule.android.msales.mgl.commons.view.SplashScreen
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:43:9-51:20
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:45:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:44:13-85
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:46:13-50:29
+action#android.intent.action.MAIN
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:47:17-69
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:47:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:49:17-77
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:49:27-74
+provider#android.support.v4.content.FileProvider
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:53:9-63:20
+	android:authorities
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:55:13-48
+	android:grantUriPermissions
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:57:13-47
+	android:exported
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:56:13-37
+	tools:replace
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:58:13-48
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:54:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:59:13-62:52
+	android:resource
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:61:17-50
+	tools:replace
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:62:17-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:60:17-67
+activity#com.mobicule.android.msales.mgl.login.view.Login
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:65:9-67:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:67:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:66:13-76
+activity#com.mobicule.android.msales.mgl.menu.view.MainMenu
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:68:9-70:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:70:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:69:13-78
+activity#com.mobicule.android.msales.mgl.savedmetereading.view.SavedRandomMeterReadingCustomerInfo
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:71:9-73:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:73:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:72:13-117
+activity#com.mobicule.android.msales.mgl.mybookwalk.view.MyBookWalk
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:74:9-76:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:76:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:75:13-86
+activity#com.mobicule.android.msales.mgl.savedmetereading.view.SavedMainActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:77:9-79:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:79:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:78:13-99
+activity#com.mobicule.android.msales.mgl.meterreading.view.CustomerInformation
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:80:9-82:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:82:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:81:13-97
+activity#com.mobicule.android.msales.mgl.meterreading.view.MeterReading
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:83:9-85:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:85:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:84:13-90
+activity#com.mobicule.android.msales.mgl.search.view.SearchInputActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:86:9-88:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:88:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:87:13-91
+activity#com.mobicule.android.msales.mgl.updatecustomer.view.SavedUpdateCustomerSummary
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:89:9-91:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:91:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:90:13-106
+activity#com.mobicule.android.msales.mgl.updatecustomer.view.UpdateCustomerInfoActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:92:9-94:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:94:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:93:13-106
+activity#com.mobicule.android.msales.mgl.updatecustomer.view.SavedUpdateCustomer
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:95:9-97:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:97:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:96:13-99
+activity#com.mobicule.android.msales.mgl.updatecustomer.view.UpdateMeterActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:98:9-100:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:100:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:99:13-99
+activity#com.mobicule.android.msales.mgl.updatecustomer.view.UpdateAddressActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:101:9-103:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:103:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:102:13-101
+activity#com.mobicule.android.msales.mgl.updatecustomer.view.UpadteCustomerTakePictureActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:104:9-106:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:106:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:105:13-113
+activity#com.mobicule.android.msales.mgl.updatecustomer.view.UpdateContactNoActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:107:9-109:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:109:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:108:13-103
+activity#com.mobicule.android.msales.mgl.meterreading.view.CustomerSummary
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:110:9-112:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:112:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:111:13-93
+activity#com.mobicule.android.msales.mgl.search.view.SearchOutput
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:113:9-115:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:115:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:114:13-84
+activity#com.mobicule.android.msales.mgl.search.view.SearchCustomerSummary
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:116:9-118:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:118:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:117:13-93
+activity#com.mobicule.android.msales.mgl.search.view.SavedSummary
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:119:9-121:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:121:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:120:13-84
+activity#com.mobicule.android.msales.mgl.meterreading.view.Summary
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:122:9-124:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:124:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:123:13-85
+activity#com.mobicule.android.msales.mgl.meterreading.view.ImplausibleReading
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:125:9-127:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:127:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:126:13-96
+activity#com.mobicule.android.msales.mgl.search.view.DefaultSearchActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:128:9-130:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:130:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:129:13-93
+activity#com.mobicule.android.msales.mgl.meterreading.view.BuildingListActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:131:9-133:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:133:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:132:13-98
+activity#com.mobicule.android.msales.mgl.updatecustomer.view.UpdateCustomerSummaryActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:134:9-136:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:136:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:135:13-109
+activity#com.mobicule.android.msales.mgl.updatecustomer.view.DefaultUpdateCustomerActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:137:9-139:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:139:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:138:13-109
+activity#com.mobicule.android.msales.mgl.randommeterreading.view.TakePicture
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:140:9-142:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:142:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:141:13-95
+activity#com.mobicule.android.msales.mgl.randommeterreading.view.RandomMeterReadingActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:143:9-145:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:145:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:144:13-110
+activity#com.mobicule.android.msales.mgl.randommeterreading.view.RandomMeterReadingSummary
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:146:9-148:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:148:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:147:13-109
+activity#com.mobicule.android.msales.mgl.randommeterreading.view.DefaultRandomMeterReadingActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:149:9-151:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:151:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:150:13-117
+activity#com.mobicule.android.msales.mgl.meterreading.view.PhotoIntentActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:152:9-155:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:155:13-49
+	android:configChanges
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:154:13-59
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:153:13-97
+service#com.mobicule.android.msales.mgl.commons.model.NotifyService
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:157:9-95
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:157:18-92
+receiver#com.mobicule.android.msales.mgl.commons.model.AlarmReceiver
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:159:9-96
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:159:19-93
+activity#com.mobicule.android.msales.mgl.savedmetereading.view.SavedBuildingListActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:161:9-163:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:163:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:162:13-107
+activity#com.mobicule.android.msales.mgl.savedmetereading.view.SavedCustomerInformation
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:164:9-166:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:166:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:165:13-106
+activity#com.mobicule.android.msales.mgl.meterreading.view.Inspection
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:167:9-169:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:169:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:168:13-88
+activity#com.mobicule.android.msales.mgl.savedmetereading.view.DefaultSavedMeterReadingActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:170:9-172:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:172:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:171:13-114
+activity#com.mobicule.android.msales.mgl.jointicketing.JoinTicketingActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:173:9-175:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:175:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:174:13-95
+activity#com.mobicule.android.msales.mgl.jointicketing.view.JoinTicketing
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:176:9-179:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:179:13-49
+	android:configChanges
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:178:13-48
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:177:13-92
+activity#com.mobicule.android.msales.mgl.jointicketing.view.JoinTicketingSummary
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:180:9-182:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:182:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:181:13-99
+activity#com.mobicule.android.msales.mgl.jointicketing.view.JoinTicketingFinalSummary
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:183:9-185:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:185:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:184:13-104
+activity#com.mobicule.android.msales.mgl.savedjointicketing.SavedJoinTicketingListActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:186:9-188:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:188:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:187:13-109
+activity#com.mobicule.android.msales.mgl.savedjointicketing.SavedJoinTicketingInformation
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:189:9-191:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:191:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:190:13-108
+activity#com.mobicule.android.msales.mgl.sign.SignatureActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:192:9-194:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:194:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:193:13-82
+activity#com.mobicule.android.msales.mgl.meterreading.view.VerifyMeterReadingActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:195:9-197:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:197:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:196:13-104
+activity#com.mobicule.android.msales.mgl.search.view.SearchCustomerSummaryActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:198:9-200:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:200:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:199:13-101
+service#com.mobicule.android.msales.mgl.commons.model.BackgroundService
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:202:9-99
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:202:18-96
+service#com.mobicule.android.msales.mgl.timevariation.MtService
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:203:9-205:38
+	android:enabled
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:205:13-35
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:204:13-83
+service#com.mobicule.android.msales.mgl.autotrigger.AutotriggerService
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:206:9-208:38
+	android:enabled
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:208:13-35
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:207:13-90
+receiver#com.mobicule.android.msales.mgl.commons.model.BackgroundBroadcastReceiver
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:210:9-217:20
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:210:19-107
+receiver#com.mobicule.android.msales.mgl.autotrigger.AutotriggerBroadcastReceiver
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:218:9-225:20
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:218:19-106
+intent-filter#AutoTriggerAction+android.intent.action.BOOT_COMPLETED+android.intent.category.LAUNCHER
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:219:13-224:29
+action#AutoTriggerAction
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:220:17-60
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:220:25-57
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:221:17-79
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:221:25-76
+activity#com.mobicule.android.msales.mgl.updatecustomer.view.DocumentImageActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:235:9-237:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:237:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:236:13-101
+activity#com.mobicule.android.msales.mgl.updatecustomer.view.UpdateCustomerFinalSummaryActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:238:9-240:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:240:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:239:13-114
+activity#com.mobicule.android.msales.mgl.onmplaning.view.OnMPlanningActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:241:9-251:20
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:243:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:242:13-95
+activity#com.mobicule.android.msales.mgl.savedmetereading.view.SavedOnMListActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:252:9-254:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:254:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:253:13-102
+activity#com.mobicule.android.msales.mgl.onmplaning.view.OnMPlanningSummaryActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:255:9-257:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:257:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:256:13-102
+activity#com.mobicule.android.msales.mgl.onmplaning.view.OnMTakePictureActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:258:9-260:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:260:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:259:13-98
+activity#com.mobicule.android.msales.mgl.onmplaning.view.DefaultOnMPlanningActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:261:9-111
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:261:19-108
+activity#com.mobicule.android.msales.mgl.savedmetereading.view.SavedOnMSummaryActivity
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:262:9-264:52
+	android:screenOrientation
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:264:13-49
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:263:13-105
+service#com.mahanagar.notification.implementation.GCMPushReceiverService
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:265:9-271:19
+	android:exported
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:267:13-37
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:266:13-79
+intent-filter#com.google.android.c2dm.intent.RECEIVE
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:268:13-270:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:269:17-81
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:269:25-78
+service#com.mahanagar.notification.implementation.GPSActivationService
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:272:9-274:38
+	android:enabled
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:274:13-35
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:273:13-77
+receiver#com.mahanagar.notification.implementation.AlarmSnoozeReceiver
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:276:9-85
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:276:19-82
+service#com.mahanagar.notification.implementation.LocationTrackingBackgroundService
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:278:9-280:38
+	android:enabled
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:280:13-35
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:279:13-90
+receiver#com.mobicule.crashnotifier.backgroundmail.ConnectivityChangedBroadcastReceiver
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:282:9-288:20
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:282:19-112
+receiver#com.mobicule.crashnotifier.CloseNotificationReceiver
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:289:9-89
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:289:19-86
+service#com.mobicule.crashnotifier.EmailNotificationService
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:291:9-87
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:291:18-84
+service#com.mobicule.crashnotifier.backgroundmail.SendBackgroundMailService
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:292:9-103
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:292:18-100
+service#com.mobicule.android.msales.mgl.commons.model.BackgroundDataSendTaskNew
+ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:293:9-295:39
+	android:exported
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:295:13-37
+	android:name
+		ADDED from /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/AndroidManifest.xml:294:13-99
+activity#com.mobicule.android.component.db.DBComponentActivity
+ADDED from [mSalesMgl1_backup_copy_shreya_pc:mobidbcomponent:unspecified] /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/exploded-aar/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/unspecified/AndroidManifest.xml:15:9-25:20
+	android:label
+		ADDED from [mSalesMgl1_backup_copy_shreya_pc:mobidbcomponent:unspecified] /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/exploded-aar/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/unspecified/AndroidManifest.xml:17:13-45
+	android:name
+		ADDED from [mSalesMgl1_backup_copy_shreya_pc:mobidbcomponent:unspecified] /home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/exploded-aar/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/unspecified/AndroidManifest.xml:16:13-81

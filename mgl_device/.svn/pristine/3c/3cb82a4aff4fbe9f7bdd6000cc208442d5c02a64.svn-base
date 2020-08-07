@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/TitleBar" >
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:onClick="goHome"
+            android:src="@drawable/title_home" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:text="Customer Update" />
+
+       <ImageView style="@style/TitleBarSeparator" />
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:src="@drawable/mahanagarlogosmall" /> 
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/SplashImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/msales" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_marginLeft="3dp">
+
+        <RelativeLayout
+            android:id="@+id/widget60"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+    		android:focusableInTouchMode="true" >
+
+            <TextView
+                android:id="@+id/bpNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dip"
+                android:text="BP Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bpNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/bpNumberText"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/mroNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/bpNumber"
+                android:layout_marginTop="5dip"
+                android:text="MRO Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/mroNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/mroNumberText"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/customerNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/mroNumber"
+                android:layout_marginTop="5dip"
+                android:text="Customer Name: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/customerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/customerNameText"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/customerNameButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/customerName"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newCustomerName_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/customerName"
+                android:layout_marginTop="5dip"
+                android:text="New Customer Name: "
+                android:textColor="#ff000000"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newCustomerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newCustomerName_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/meterNoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newCustomerName"
+                android:layout_marginTop="5dip"
+                android:text="Current Meter Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/meterNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/meterNoText"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/meterNumberButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/meterNo"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newMeterNumber_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/meterNo"
+                android:layout_marginTop="5dip"
+                android:text="New Meter Number: "
+                android:textColor="#ff000000"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newMeterNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newMeterNumber_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/flatNoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newMeterNo"
+                android:layout_marginTop="5dip"
+                android:text="Current Flat Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/flatNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/flatNoText"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/flatNumberButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/flatNo"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newFlatNumber_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/flatNo"
+                android:layout_marginTop="5dip"
+                android:text="New Flat Number: "
+                android:textColor="#ff000000"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newFlatNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newFlatNumber_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/floorNoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newFlatNo"
+                android:layout_marginTop="5dip"
+                android:text="Current Floor Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/floorNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/floorNoText"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/floorNumberButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/floorNo"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newFloorNumber_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/floorNo"
+                android:layout_marginTop="5dip"
+                android:text="New Floor Number: "
+                android:textColor="#ff000000"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newFloorNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newFloorNumber_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/plotNoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newFloorNo"
+                android:layout_marginTop="5dip"
+                android:text="Current Plot Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/plotNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/plotNoText"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/plotNumberButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/plotNo"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newPlotNumber_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/plotNo"
+                android:layout_marginTop="5dip"
+                android:text="New Plot Number: "
+                android:textColor="#ff000000"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newPlotNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newPlotNumber_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/wingNoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newPlotNo"
+                android:layout_marginTop="5dip"
+                android:text="Current Wing Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/wingNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/wingNoText"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/wingNumberButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/wingNo"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newWingNumber_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/wingNo"
+                android:layout_marginTop="5dip"
+                android:text="New Wing Number: "
+                android:textColor="#ff000000"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newWingNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newWingNumber_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/buildNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newWingNo"
+                android:layout_marginTop="5dip"
+                android:text="Current Building Name: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/buildName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/buildNameText"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/buildNameButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/buildName"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newBuildName_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/buildName"
+                android:layout_marginTop="5dip"
+                android:text="New Building Name: "
+                android:textColor="#ff000000"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newBuildName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newBuildName_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <!-- Contact No (Mobile) -->
+
+            <TextView
+                android:id="@+id/contactNoMobileText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newBuildName"
+                android:layout_marginTop="5dip"
+                android:text="Current Contact Number (Mobile): "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/contactMobileNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/contactNoMobileText"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/contactNoMobileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/contactMobileNo"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newContactNoMobile_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/contactMobileNo"
+                android:layout_marginTop="5dip"
+                android:text="New Contact Number (Mobile)"
+                android:textColor="#ff000000"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newContactNoMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newContactNoMobile_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <!-- Contact No (Residance) -->
+
+            <TextView
+                android:id="@+id/contactNoHomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newContactNoMobile"
+                android:layout_marginTop="5dip"
+                android:text="Current Contact Number (Home): "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/contactHomeNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/contactNoHomeText"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/contactNoHomeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/contactHomeNo"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newContactNoHome_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/contactHomeNo"
+                android:layout_marginTop="5dip"
+                android:text="New Contact Number (Home)"
+                android:textColor="#ff000000"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newContactNoHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newContactNoHome_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <!-- Contact No (Office) -->
+
+            <TextView
+                android:id="@+id/contactNoOfficeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newContactNoHome"
+                android:layout_marginTop="5dip"
+                android:text="Current Contact Number (Office): "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/contactOfficeNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/contactNoOfficeText"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/contactNoOfficeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/contactOfficeNo"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newContactNoOffice_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/contactOfficeNo"
+                android:layout_marginTop="5dip"
+                android:text="New Contact Number (Office) "
+                android:textColor="#ff000000"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newContactNoOffice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newContactNoOffice_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <!-- Remark -->
+
+            <TextView
+                android:id="@+id/custUpdate_TextViewRemark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newContactNoOffice"
+                android:layout_marginTop="6dip"
+                android:text="Remark:"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/custUpdate_EditTextRemark"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/custUpdate_TextViewRemark"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000">
+            </EditText>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="0dip"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="#333333"
+                    android:text="Cancel"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+                <Button
+                    android:id="@+id/updateButton"
+                    android:layout_width="0dip"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="#bc3751"
+                    android:text="Update"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout><!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/TitleBar" >
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:onClick="goHome"
+            android:src="@drawable/title_home" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:text="Customer Update" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:src="@drawable/mahanagarlogosmall" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/SplashImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/msales" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/widget60"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/bpNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dip"
+                android:text="BP Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bpNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/bpNumberText"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/mroNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/bpNumber"
+                android:layout_marginTop="5dip"
+                android:text="MRO Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/mroNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/mroNumberText"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/customerNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/mroNumber"
+                android:layout_marginTop="5dip"
+                android:text="Customer Name: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/customerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/customerNameText"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/customerNameButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/customerName"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newCustomerName_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/customerName"
+                android:layout_marginTop="5dip"
+                android:text="New Customer Name: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newcustomerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newCustomerName_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/meterNumberbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/meterNumber"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/meternum_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newcustomerName"
+                android:layout_marginTop="15dip"
+                android:text="Current Meter Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/meterNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/meternum_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newMeternum_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/meterNumber"
+                android:layout_marginTop="5dip"
+                android:text="New Meter Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newMeterNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newMeternum_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/flat_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newMeternum_TextView"
+                android:layout_marginTop="15dip"
+                android:text="Current Flat Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/flatText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/flat_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/flatNumberButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/flatText"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newFlatNo_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/flatText"
+                android:layout_marginTop="5dip"
+                android:text="New Flat Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newFlatNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newFlatNo_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/floor_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newFlatNo"
+                android:layout_marginTop="15dip"
+                android:text="Current Floor Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/floorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/floor_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/floorNumberButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/floorText"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newFloor_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/floor_TextView"
+                android:layout_marginTop="5dip"
+                android:text="New Floor Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newFloorNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newFloor_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/plot_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newFloorNo"
+                android:layout_marginTop="15dip"
+                android:text="Current Plot Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/plotText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/plot_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/plotNumberButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/plotText"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newPlot_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/plot_TextView"
+                android:layout_marginTop="5dip"
+                android:text="New Plot Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newPlotNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newPlot_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/wing_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newPlotNo"
+                android:layout_marginTop="15dip"
+                android:text="Current Wing Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/wingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/wing_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/wingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/wingText"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newWing_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/wing_TextView"
+                android:layout_marginTop="5dip"
+                android:text="New Wing: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newWingNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newWing_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/buildname_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newWingNo"
+                android:layout_marginTop="15dip"
+                android:text="Current Building Name: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/buildnameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/buildname_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/buildnameButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/buildnameText"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newBuildname_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/buildname_TextView"
+                android:layout_marginTop="5dip"
+                android:text="New Building Name: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/newbuildname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newBuildname_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/contactNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/buildnameText"
+                android:layout_marginTop="5dip"
+                android:text="Current Contact Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/contactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/contactNumberText"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <Button
+                android:id="@+id/contactNumberButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/contactNumber"
+                android:layout_alignLeft="@+id/meterNumberbutton"
+                android:layout_marginTop="5dip"
+                android:padding="15dp"
+                android:text="Edit" >
+            </Button>
+
+            <TextView
+                android:id="@+id/newcontactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/newBuildname_TextView"
+                android:layout_marginTop="5dip"
+                android:textColor="#ff000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/NewcontactNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/plotText"
+                android:layout_marginTop="5dip"
+                android:text="New Contact Number: "
+                android:textColor="#ff000000" >
+            </TextView>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
+-->

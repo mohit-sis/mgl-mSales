@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/drawable-hdpi-v4/title_button.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/drawable-hdpi/title_button.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/drawable-hdpi-v4/menu_button.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/drawable-hdpi/menu_button.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/drawable-hdpi-v4/close.jpg",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/drawable-hdpi/close.jpg"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon.png",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/exploded-aar/mSalesMgl1_backup_copy_shreya_pc/mobidbcomponent/unspecified/res/drawable-hdpi-v4/icon.png"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/drawable-hdpi-v4/random.jpg",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/drawable-hdpi/random.jpg"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/drawable-hdpi-v4/home_button3.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/drawable-hdpi/home_button3.xml"
+    },
+    {
+        "merged": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/build/intermediates/res/merged/debug/drawable-hdpi-v4/title_home.xml",
+        "source": "/home/ashish/Documents/UATFolder/mSalesMgl1_backup_copy_shreya_pc/mSalesMgl/src/main/res/drawable-hdpi/title_home.xml"
+    }
+]

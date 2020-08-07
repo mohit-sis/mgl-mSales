@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_headerLayout"
+        style="@style/TitleBar" >
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:onClick="goHome"
+            android:src="@drawable/title_home" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:text="Meter Reading" />
+
+         <ImageView style="@style/TitleBarSeparator" />
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:src="@drawable/mahanagarlogosmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/splashImageViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_headerLayout"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/SplashImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/msales" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_mainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/splashImageViewLayout"
+        android:layout_margin="5dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/ll_metercheckingpossible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tv_metercheckingpossible"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="0.6"
+                    android:text="MGL gas burning possible?"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_metercheckingpossible"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tv_metercheckingpossible"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/rb_yesmetercheckingpossible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_nometercheckingpossible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textSize="12sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_linearlayoutburner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_metercheckingpossible"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1 " >
+
+                <TextView
+                    android:id="@+id/tv_burnerchecked"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="0.6"
+                    android:text="MGL gas burnt,Meter Status :"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_burnerchecked"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_burnerchecked"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/rb_yesburnerchecked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meter working"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_noburnerchecked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meter not working"
+                        android:textSize="12sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_linearlayoutburner"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Code :"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_msgfromreader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_code"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_msgfromreader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/message"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_lpgsupplier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_msgfromreader"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1 " >
+
+                <TextView
+                    android:id="@+id/tv_lpgsupplier"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="0.6"
+                    android:text="LPG Supplier :"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_lpgsupplier"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_lpgsupplier"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/rb_hp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hp"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_indane"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="indane"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_bharat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bharat"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_cust"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Customer did not give detail"
+                        android:textSize="12sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_lpgsupplier"
+                android:layout_marginTop="5dip"
+                android:orientation="vertical"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/tv_remarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remark"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ed_remarks"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="5dip"
+                    android:maxLength="250" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

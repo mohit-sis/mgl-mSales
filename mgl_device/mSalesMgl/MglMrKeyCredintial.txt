@@ -1,0 +1,5 @@
+key store password : stillgo4it
+
+key alias : msales
+
+key password : stillgo4it

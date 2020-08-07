@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/TitleBar"
+        android:layout_alignParentTop="true" >
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:onClick="goHome"
+            android:src="@drawable/title_home" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:text="Meter Reading" />
+
+       <ImageView style="@style/TitleBarSeparator" />
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/title_home"
+            android:src="@drawable/mahanagarlogosmall" />
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        style="@style/TitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/title_home"
+            android:onClick="goHome"
+            android:src="@drawable/title_home" />
+
+        <ImageView
+            style="@style/TitleBarSeparator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meter Reading" />
+
+        <ImageView
+            style="@style/TitleBarSeparator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/title_home"
+            android:src="@drawable/mahanagarlogosmall" />
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/splashImageViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_container"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/SplashImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/msales" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/buttonsLayout"
+        android:layout_below="@+id/splashImageViewLayout"
+        android:layout_marginLeft="5dp"
+        android:background="@color/background1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/meterCheckingLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/meterCheckingTextView"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:text="MGL gas burning possible? "
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meterCheckingTextViewHindi"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:text="एमजीएल गैस जलाना सम्भव ?  "
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/radioButtonsLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/yesRadioButtonsLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/yesRadioButton1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/unselected_radio_button" />
+
+                        <TextView
+                            android:id="@+id/yesRadioButton1_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Yes"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/noRadioButtonsLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/noRadioButton1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/unselected_radio_button" />
+
+                        <TextView
+                            android:id="@+id/noRadioButton1_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="No"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/burnerOperatedLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/burnerOperatedTextView"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:text="MGL gas burnt. Meter status : "
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/burnerOperatedTextViewHindi"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:text="एमजीएल गैस जलाई। मीटर का स्टेटस-   "
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/radioButtonsLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/yesRadioButton2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/unselected_radio_button" />
+
+                        <TextView
+                            android:id="@+id/yesRadioButton2_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Meter working"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/noRadioButton2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/unselected_radio_button" />
+
+                        <TextView
+                            android:id="@+id/noRadioButton2_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Meter not working"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/conditionLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/conditionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dip"
+                    android:text="Condition : "
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/conditionDescriptionTextView"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dip"
+                    android:layout_toRightOf="@+id/conditionTextView"
+                    android:text="All details verified. Actual consumption abnormal." />
+
+                <LinearLayout
+                    android:id="@+id/conditionInfoImageLayout"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/conditionInfoImage"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/i" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/codeAndMessageFromReaderLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/code_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="10dip"
+                        android:text="Code: "
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/codeInfoImageLayout"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="bottom|right"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/codeInfoImage"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/i" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <Spinner
+                    android:id="@+id/meterReadingCodeSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip" />
+
+                <RelativeLayout
+                    android:id="@+id/messageRelativeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/meterReadingMessageTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="10dip"
+                        android:text="Message From Reader: "
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/messageInfoImageLayout"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="bottom|right"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/messageInfoImage"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/i" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <Spinner
+                    android:id="@+id/meterReadingMessageSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip" />
+
+                <LinearLayout
+                    android:id="@+id/ll_radioButtonsLayoutLPG"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_LPG_textview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5" >
+
+                        <TextView
+                            android:id="@+id/LPGTextView"
+                            android:layout_width="145dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dip"
+                            android:text="LPG Supplier :"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_radioButtonsLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/imageHPL"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/unselected_radio_button" />
+
+                            <TextView
+                                android:id="@+id/imageHPL_TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="HP"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/imageIndane"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/unselected_radio_button" />
+
+                            <TextView
+                                android:id="@+id/imageIndane_TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Indane"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/imageBharat"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/unselected_radio_button" />
+
+                            <TextView
+                                android:id="@+id/imageBharat_TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Bharat"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/imageCustomer"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/unselected_radio_button" />
+
+                            <TextView
+                                android:id="@+id/imageCustomer_TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Customer did not share details"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--
+                <LinearLayout
+                    android:id="@+id/ll_LPGSupplier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/tv_LPGSupplier"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="0.3"
+                        android:text="LPG Supplier"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_LPGSupplier"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/tv_LPGSupplier"
+                        android:layout_weight="0.7"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/rb_HpLPGSupplier"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_IndaneLPGSupplier"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Indane" />
+
+                        <RadioButton
+                            android:id="@+id/rb_bharatLPGSupplier"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bharat" />
+
+                        <RadioButton
+                            android:id="@+id/rb_custLPGSupplier"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Customer didnot share details" />
+                    </RadioGroup>
+                </LinearLayout>
+                -->
+
+                <TextView
+                    android:id="@+id/tv_remarks"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="Remarks :"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/meterReading_remarksvalue"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:hint="Enter Remarks"
+                    android:maxLength="250"
+                    android:visibility="visible" />
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="Final Attempt"
+                    android:textColor="#000000"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#333333"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#bc3751"
+            android:text="Next"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

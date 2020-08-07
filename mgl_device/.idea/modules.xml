@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mSalesMgl/mSalesMgl.iml" filepath="$PROJECT_DIR$/mSalesMgl/mSalesMgl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mgl_device.iml" filepath="$PROJECT_DIR$/mgl_device.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mglclientcore/mglclientcore.iml" filepath="$PROJECT_DIR$/mglclientcore/mglclientcore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobidbcomponent/mobidbcomponent.iml" filepath="$PROJECT_DIR$/mobidbcomponent/mobidbcomponent.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    >
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+    <TextView
+            android:id="@+id/imageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image text"
+            android:layout_marginTop="15dip"
+            android:textColor="@color/red"
+            />
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="400px"
+            android:layout_height="300px"
+            android:src="@drawable/meter" 
+            />
+     <Button
+            android:id="@+id/btnIntendS"
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnIntendS" />
+     </LinearLayout>
+     
+      
+      <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <Button 
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+       android:text=" Save Photo "
+        android:id="@+id/saveButton"
+        />
+    <Button
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+       android:id="@+id/cancelButton"
+        android:text="Cancel"
+        />
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="550px"
+                    android:layout_height="650px"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dip"
+                    android:src="@drawable/meter"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2"
+                android:layout_marginTop="90dp">
+
+                <Button
+                    android:id="@+id/btnIntendS"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="#bc3751"
+                    android:text="@string/btnIntendS"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btncropImage"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="#bc3751"
+                    android:text="@string/btnCropImage"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="0dip"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="#333333"
+                    android:text="Cancel"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="0dip"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="#bc3751"
+                    android:text="Save Photo"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

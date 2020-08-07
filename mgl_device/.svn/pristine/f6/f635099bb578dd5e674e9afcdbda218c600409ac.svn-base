@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mahanagar"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="2.6" > <!-- android:versionCode="1" android:versionName="2.2.5" -->
+    <!-- vc = 2, vn = 2.6 16/10/2019 Live -->
+    <!-- vc = 2, vn = 2.6 04/10/2019 Live -->
+    <!-- vc = 2, vn = 2.6 27/09/2019 Live -->
+    <!-- 2.6 19/09/2019 Live -->
+    <!-- 2.2.5 -->
+    <!-- 2.1.9 -->
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="26" />
+    <!-- 8 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name="com.mobicule.android.msales.mgl.commons.model.AppApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/msalesnew"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.D1t" >
+        <activity
+            android:name="com.mobicule.android.msales.mgl.commons.view.SplashScreen"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.mahanagar"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity
+            android:name="com.mobicule.android.msales.mgl.login.view.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.menu.view.MainMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.savedmetereading.view.SavedRandomMeterReadingCustomerInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.mybookwalk.view.MyBookWalk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.savedmetereading.view.SavedMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.meterreading.view.CustomerInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.meterreading.view.MeterReading"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.search.view.SearchInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.updatecustomer.view.SavedUpdateCustomerSummary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.updatecustomer.view.UpdateCustomerInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.updatecustomer.view.SavedUpdateCustomer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.updatecustomer.view.UpdateMeterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.updatecustomer.view.UpdateAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.updatecustomer.view.UpadteCustomerTakePictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.updatecustomer.view.UpdateContactNoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.meterreading.view.CustomerSummary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.search.view.SearchOutput"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.search.view.SearchCustomerSummary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.search.view.SavedSummary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.meterreading.view.Summary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.meterreading.view.ImplausibleReading"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.search.view.DefaultSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.meterreading.view.BuildingListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.updatecustomer.view.UpdateCustomerSummaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.updatecustomer.view.DefaultUpdateCustomerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.randommeterreading.view.TakePicture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.randommeterreading.view.RandomMeterReadingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.randommeterreading.view.RandomMeterReadingSummary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.randommeterreading.view.DefaultRandomMeterReadingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.meterreading.view.PhotoIntentActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.mobicule.android.msales.mgl.commons.model.NotifyService" />
+
+        <receiver android:name="com.mobicule.android.msales.mgl.commons.model.AlarmReceiver" />
+
+        <activity
+            android:name="com.mobicule.android.msales.mgl.savedmetereading.view.SavedBuildingListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.savedmetereading.view.SavedCustomerInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.meterreading.view.Inspection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.savedmetereading.view.DefaultSavedMeterReadingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.jointicketing.JoinTicketingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.jointicketing.view.JoinTicketing"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.jointicketing.view.JoinTicketingSummary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.jointicketing.view.JoinTicketingFinalSummary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.savedjointicketing.SavedJoinTicketingListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.savedjointicketing.SavedJoinTicketingInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.sign.SignatureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.meterreading.view.VerifyMeterReadingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.search.view.SearchCustomerSummaryActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.mobicule.android.msales.mgl.commons.model.BackgroundService" />
+        <service
+            android:name="com.mobicule.android.msales.mgl.timevariation.MtService"
+            android:enabled="true" />
+        <service
+            android:name="com.mobicule.android.msales.mgl.autotrigger.AutotriggerService"
+            android:enabled="true" />
+
+        <receiver android:name="com.mobicule.android.msales.mgl.commons.model.BackgroundBroadcastReceiver" >
+
+            <!--
+            <intent-filter>
+                <action android:name="SendBackgroundReceiverAction"/>
+            </intent-filter>
+            -->
+        </receiver>
+        <receiver android:name="com.mobicule.android.msales.mgl.autotrigger.AutotriggerBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="AutoTriggerAction" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+        <!--
+        <receiver android:name="com.mobicule.android.msales.mgl.autotrigger.TestBroadcastReceiver">
+            <intent-filter>
+                <action android:name="TestAction"/>
+                 <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+        -->
+        <activity
+            android:name="com.mobicule.android.msales.mgl.updatecustomer.view.DocumentImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.updatecustomer.view.UpdateCustomerFinalSummaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.onmplaning.view.OnMPlanningActivity"
+            android:screenOrientation="portrait" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.mobicule.android.msales.mgl.savedmetereading.view.SavedOnMListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.onmplaning.view.OnMPlanningSummaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.onmplaning.view.OnMTakePictureActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.mobicule.android.msales.mgl.onmplaning.view.DefaultOnMPlanningActivity" />
+        <activity
+            android:name="com.mobicule.android.msales.mgl.savedmetereading.view.SavedOnMSummaryActivity"
+            android:screenOrientation="portrait" /> <!-- crash notifier -->
+        <service
+            android:name="com.mahanagar.notification.implementation.GCMPushReceiverService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.mahanagar.notification.implementation.GPSActivationService"
+            android:enabled="true" />
+
+        <receiver android:name="com.mahanagar.notification.implementation.AlarmSnoozeReceiver" />
+
+        <service
+            android:name="com.mahanagar.notification.implementation.LocationTrackingBackgroundService"
+            android:enabled="true" />
+
+        <receiver android:name="com.mobicule.crashnotifier.backgroundmail.ConnectivityChangedBroadcastReceiver" >
+
+            <!--
+            <intent-filter>
+            </intent-filter>
+            -->
+        </receiver>
+        <receiver android:name="com.mobicule.crashnotifier.CloseNotificationReceiver" />
+
+        <service android:name="com.mobicule.crashnotifier.EmailNotificationService" />
+        <service android:name="com.mobicule.crashnotifier.backgroundmail.SendBackgroundMailService" />
+        <service
+            android:name="com.mobicule.android.msales.mgl.commons.model.BackgroundDataSendTaskNew"
+            android:exported="false" />
+
+        <activity
+            android:name="com.mobicule.android.component.db.DBComponentActivity"
+            android:label="@string/app_name" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+    </application>
+
+</manifest>
